@@ -192,14 +192,14 @@ const Index = () => {
               "Quer estruturar os próximos 1 a 3 anos com critério — não por reação ao mercado",
               "Precisa de um espaço estratégico, não motivacional, para pensar o próximo movimento",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-lg text-primary-foreground/90">
+              <li key={item} className="flex items-start gap-3 text-lg md:text-xl text-primary-foreground/90">
                 <Check className="w-5 h-5 text-warm mt-1 shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
           </ul>
           <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-6 max-w-xl mx-auto text-center">
-            <p className="text-primary-foreground font-bold text-lg mb-2">
+            <p className="text-primary-foreground font-bold text-lg md:text-xl mb-2">
               Você não precisa estar em crise para participar.
             </p>
             <p className="text-primary-foreground/70 text-base">
