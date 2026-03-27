@@ -586,7 +586,8 @@ const Index = () => {
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.4), hsla(var(--background) / 0.9) 40%, hsl(var(--background)))" }} />
         <div className="relative container mx-auto px-4 sm:px-6 max-w-3xl text-center text-foreground flex flex-col justify-end min-h-[320px] sm:min-h-[400px]">
           <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed mb-4">
-            Se você já percebeu que deixar a carreira no automático pode custar caro,
+            Se você já percebeu que deixar a carreira
+            <br />no automático pode custar caro,
             <br />adiar essa decisão não resolve.
           </p>
           <p className="text-lg text-accent font-bold mb-10">
