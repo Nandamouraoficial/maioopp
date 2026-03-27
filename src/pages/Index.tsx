@@ -78,15 +78,12 @@ const Index = () => {
             <div className="flex-1 text-foreground text-center lg:text-left">
               <p className="text-accent text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
               <h1 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-8">
-                Sua carreira já te trouxe até aqui.
+                Você não precisa de mais informação.
                 <br />
-                <span className="text-accent">O próximo passo exige direção.</span>
+                <span className="text-accent">Precisa decidir o seu próximo movimento.</span>
               </h1>
-              <p className="text-lg md:text-xl font-light leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
-                Um dia inteiro de trabalho estratégico para executivos e profissionais seniores que precisam decidir o próximo movimento de carreira — com método, não com impulso.
-              </p>
-              <p className="text-base font-semibold mb-10 max-w-lg mx-auto lg:mx-0">
-                Não é aula. Não é palestra. É a imersão onde você sai com uma decisão tomada e um plano para os próximos 30 dias.
+              <p className="text-lg md:text-xl font-light leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0">
+                Um dia inteiro de trabalho estratégico para executivas que não podem mais adiar uma decisão de carreira.
               </p>
 
               <div className="flex flex-col items-center lg:items-start gap-3">
