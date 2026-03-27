@@ -77,12 +77,12 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="flex-1 text-foreground text-center lg:text-left">
               <p className="text-accent text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
-              <h1 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-8">
+              <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-8">
                 Você não precisa de mais informação.
                 <br />
                 <span className="text-accent">Precisa decidir o seu próximo movimento.</span>
               </h1>
-              <p className="text-lg md:text-xl font-light leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0">
+              <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Um dia inteiro de trabalho estratégico para executivas que não podem mais adiar uma decisão de carreira.
               </p>
 
