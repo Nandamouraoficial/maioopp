@@ -82,7 +82,7 @@ const Index = () => {
                 <br />
                 <span className="text-accent">Precisa decidir o seu próximo movimento.</span>
               </h1>
-              <p className="text-lg md:text-xl font-light leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0">
+              <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Um dia inteiro de trabalho estratégico para executivas que não podem mais adiar uma decisão de carreira.
               </p>
 
