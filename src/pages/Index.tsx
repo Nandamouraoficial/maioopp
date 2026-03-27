@@ -217,7 +217,7 @@ const Index = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             O que acontece em 6 horas de imersão
           </h2>
-          <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg md:text-xl mb-12 max-w-2xl mx-auto">
             Cada etapa foi desenhada para levar você de um cenário indefinido a uma decisão concreta.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-14">
