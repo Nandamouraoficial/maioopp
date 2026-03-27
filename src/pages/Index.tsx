@@ -447,11 +447,10 @@ const Index = () => {
             </ul>
             <p>
               E quando olha para trás,
-              <br />passou mais um ano —
-              <br /><strong className="text-foreground">sem mudança relevante.</strong>
+              <br /><strong className="text-foreground">passou mais um ano — sem mudança relevante.</strong>
             </p>
             <p>
-              O custo de não decidir raramente aparece no curto prazo.
+              <strong className="text-foreground">O custo de não decidir</strong> raramente aparece no curto prazo.
               <br />Mas se acumula.
             </p>
             <p className="text-foreground font-bold text-xl">
