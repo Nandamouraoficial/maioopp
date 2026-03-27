@@ -8,9 +8,9 @@ const CTA_URL = "https://pay.kiwify.com.br/VrHaDPn";
 
 const Divider = () => (
   <div className="flex items-center justify-center py-6">
-    <span className="block w-16 h-px bg-accent/30" />
-    <span className="mx-3 text-accent/40 text-sm">✦</span>
-    <span className="block w-16 h-px bg-accent/30" />
+    <span className="block w-16 h-px bg-warm/30" />
+    <span className="mx-3 text-warm/40 text-sm">✦</span>
+    <span className="block w-16 h-px bg-warm/30" />
   </div>
 );
 
@@ -23,7 +23,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: React.ReactNo
         className="w-full flex items-center justify-between p-5 text-left hover:bg-muted/30 transition-colors"
       >
         <span className="text-foreground font-bold text-base pr-4">{question}</span>
-        <ChevronDown className={`w-5 h-5 text-accent shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
+        <ChevronDown className={`w-5 h-5 text-warm shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
       {open && (
         <div className="px-5 pb-5 pt-0">
@@ -87,24 +87,24 @@ const Index = () => {
         <div className="relative container mx-auto px-4 sm:px-6 pt-20 md:pt-28 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="flex-1 text-foreground text-center lg:text-left">
-              <p className="text-accent text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
+              <p className="text-warm text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
               <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-warm mb-6 tracking-tight">
                 O Próximo Passo
               </p>
               <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-4">
                 Você não precisa de mais informação.
                 <br />
-                <span className="text-accent">Precisa decidir o seu próximo movimento.</span>
+                <span className="text-warm">Precisa decidir o seu próximo movimento.</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Uma imersão estratégica para executivas que não podem mais adiar uma decisão de carreira.
               </p>
-              <p className="text-sm sm:text-base text-accent font-semibold mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
+              <p className="text-sm sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Clareza, direção e um plano estruturado para os próximos 30 dias.
               </p>
 
               <div className="flex flex-col items-center lg:items-start gap-3">
-                <span className="inline-block text-xs uppercase tracking-wider font-bold text-accent border border-accent/30 bg-accent/5 rounded-full px-4 py-1.5">
+                <span className="inline-block text-xs uppercase tracking-wider font-bold text-warm border border-warm/30 bg-warm/5 rounded-full px-4 py-1.5">
                   Grupo fechado para até 15 executivos
                 </span>
                 {ctaButton}
@@ -148,7 +148,7 @@ const Index = () => {
               "Precisa de um espaço estratégico, não motivacional, para pensar o próximo movimento",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-lg text-primary-foreground/90">
-                <Check className="w-5 h-5 text-accent mt-1 shrink-0" />
+                <Check className="w-5 h-5 text-warm mt-1 shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
@@ -222,7 +222,7 @@ const Index = () => {
               "Clareza sobre o que parar de fazer para não continuar investindo no caminho errado",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-lg text-primary-foreground/90">
-                <Check className="w-5 h-5 text-accent mt-1 shrink-0" />
+                <Check className="w-5 h-5 text-warm mt-1 shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
@@ -264,7 +264,7 @@ const Index = () => {
               { label: "Resultado concreto", detail: "Você sai com decisão e plano" },
             ].map((item) => (
               <div key={item.label} className="bg-card border border-border rounded-xl p-5 text-center">
-                <p className="text-accent font-bold text-sm uppercase tracking-wide mb-1">{item.label}</p>
+                <p className="text-warm font-bold text-sm uppercase tracking-wide mb-1">{item.label}</p>
                 <p className="text-muted-foreground text-sm">{item.detail}</p>
               </div>
             ))}
@@ -293,7 +293,7 @@ const Index = () => {
               <h3 className="font-display text-2xl font-bold text-primary-foreground mb-1">
                 Fernanda Moura
               </h3>
-              <p className="text-accent font-bold mb-6">
+              <p className="text-warm font-bold mb-6">
                 Estrategista Executiva de Carreira
               </p>
               <div className="text-lg leading-relaxed text-primary-foreground/70 space-y-4">
@@ -389,19 +389,19 @@ const Index = () => {
             </p>
             <ul className="space-y-2 pl-1">
               <li className="flex items-start gap-2">
-                <span className="text-accent mt-1">•</span>
+                <span className="text-warm mt-1">•</span>
                 <span>mais do mesmo</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-accent mt-1">•</span>
+                <span className="text-warm mt-1">•</span>
                 <span>menos crescimento real</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-accent mt-1">•</span>
+                <span className="text-warm mt-1">•</span>
                 <span>decisões adiadas</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-accent mt-1">•</span>
+                <span className="text-warm mt-1">•</span>
                 <span>oportunidades que passam</span>
               </li>
             </ul>
@@ -444,7 +444,7 @@ const Index = () => {
               { icon: Users, label: "Grupo fechado — até 15 vagas" },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-4">
-                <Icon className="w-5 h-5 text-accent shrink-0" />
+                <Icon className="w-5 h-5 text-warm shrink-0" />
                 <span className="text-primary-foreground text-sm font-medium">{label}</span>
               </div>
             ))}
@@ -454,7 +454,7 @@ const Index = () => {
             <p className="text-primary-foreground text-lg leading-relaxed">
               Adiar essa decisão parece seguro.
               <br />
-              <strong className="text-accent">Mas, em carreiras seniores, costuma ser caro.</strong>
+              <strong className="text-warm">Mas, em carreiras seniores, costuma ser caro.</strong>
             </p>
           </div>
 
@@ -494,7 +494,7 @@ const Index = () => {
 
           {/* Garantia */}
           <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-8 flex flex-col items-center gap-4 max-w-xl mx-auto mt-12">
-            <Shield className="w-10 h-10 text-accent" />
+            <Shield className="w-10 h-10 text-warm" />
             <p className="font-display text-2xl font-bold text-primary-foreground">
               Garantia de resultado
             </p>
@@ -590,7 +590,7 @@ const Index = () => {
             <br />no automático pode custar caro,
             <br />adiar essa decisão não resolve.
           </p>
-          <p className="text-lg text-accent font-bold mb-10">
+          <p className="text-lg text-warm font-bold mb-10">
             O Próximo Passo é a sala para decidir com método.
           </p>
           {ctaButtonPasso}
