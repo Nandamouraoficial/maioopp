@@ -92,7 +92,7 @@ const Index = () => {
               <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-warm mb-6 tracking-tight">
                 O Próximo Passo
               </p>
-              <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-4">
+              <h1 className="font-display text-base sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-4 px-1 sm:px-0">
                 Você não precisa de mais informação.
                 <br />
                 <span className="text-warm">Precisa decidir o próximo movimento da sua carreira.</span>
