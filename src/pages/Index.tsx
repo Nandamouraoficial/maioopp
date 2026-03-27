@@ -310,9 +310,9 @@ const Index = () => {
                   "Minha carreira como executiva estava indo bem. Bônus, promoções, resultados e reconhecimento — tudo o que o mercado usa para medir sucesso. Mas por dentro eu estava quebrando, e ninguém via. A Fernanda não me disse o que fazer — ela montou a estratégia junto comigo e colocou as decisões na mesa para eu escolher. Foi a primeira vez que alguém tratou minha carreira com método e como decisão estratégica, não como problema emocional. Resultado: saí da paralisia da executiva bem-sucedida à beira do burnout e abri minha consultoria."
                 </p>
               </div>
-              <div className="mt-6 pt-6 border-t border-border">
-                <p className="font-bold text-foreground">Carla Negrão</p>
-                <p className="text-muted-foreground text-sm">Ex-executiva de Multinacional | Fundadora, CN Food Consulting</p>
+              <div className="mt-6 pt-6 border-t border-accent-foreground/20">
+                <p className="font-bold text-accent-foreground">Carla Negrão</p>
+                <p className="text-accent-foreground/60 text-sm">Ex-executiva de Multinacional | Fundadora, CN Food Consulting</p>
               </div>
             </div>
 
