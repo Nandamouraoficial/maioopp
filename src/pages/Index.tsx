@@ -282,7 +282,7 @@ const Index = () => {
                 <p>
                   Já conduziu 23 transições profissionais reais na própria carreira. Sabe exatamente o que funciona — e o que é perda de tempo.
                 </p>
-                <p className="font-bold text-foreground">
+                 <p className="font-bold text-primary-foreground">
                   Quem conduz essa imersão não fala de carreira de fora.
                   Ela tomou essas decisões de dentro.
                 </p>
