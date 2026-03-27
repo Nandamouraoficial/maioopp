@@ -130,6 +130,45 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ═══════════ MINI PROVA SOCIAL ═══════════ */}
+      <section className="bg-background py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground text-center mb-12">
+            O que acontece quando essa decisão é feita com método
+          </h2>
+          <div className="space-y-8">
+            {[
+              {
+                quote: "Saí com mais clareza sobre o que eu quero — e, principalmente, sobre o que eu não quero mais repetir.",
+                name: "Carla Negrão",
+                role: "Executiva de Assuntos Regulatórios (SRA)",
+              },
+              {
+                quote: "Foi a primeira vez que eu consegui parar e estruturar meu pensamento sobre carreira com método.",
+                name: "Juliana",
+                role: "",
+              },
+              {
+                quote: "Saí com um direcionamento claro, sem aquela sensação constante de dúvida.",
+                name: "Participante da imersão",
+                role: "",
+              },
+            ].map((t) => (
+              <blockquote key={t.name} className="text-center">
+                <p className="text-base md:text-lg italic text-foreground/85 leading-relaxed mb-3">
+                  "{t.quote}"
+                </p>
+                <footer className="text-sm text-muted-foreground">
+                  — {t.name}{t.role && <span className="text-warm"> · {t.role}</span>}
+                </footer>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
       {/* ═══════════ 2. PARA QUEM É ═══════════ */}
       <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
