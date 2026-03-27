@@ -106,7 +106,7 @@ const Index = () => {
       </section>
 
       {/* ═══════════ 2. PARA QUEM É ═══════════ */}
-      <section className="relative bg-secondary py-20 md:py-28">
+      <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
             Para quem é essa imersão
