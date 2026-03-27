@@ -393,7 +393,7 @@ const Index = () => {
             <div className="bg-warm border border-warm/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
-                <p className="text-lg text-primary leading-relaxed">
+                <p className="text-lg md:text-xl text-primary leading-relaxed">
                   "Eu já era Diretora de Impostos para a América Latina. Resultado não faltava. O que faltava era clareza sobre o próximo passo — e a segurança para me posicionar além da área técnica. A Fernanda montou comigo uma estratégia que eu não conseguia enxergar sozinha. Ganhei estrutura na comunicação, presença nos fóruns que importam e passei a atrair as oportunidades certas em vez de esperar por elas. Não precisei mudar de empresa. Mudei de posicionamento."
                 </p>
               </div>
