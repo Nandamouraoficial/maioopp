@@ -47,7 +47,7 @@ const Index = () => {
     <a onClick={handleCTAClick} className="cursor-pointer">
       <Button
         size="lg"
-        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-base sm:text-lg px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-lg px-8 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
       >
         QUERO DECIDIR MEU PRÓXIMO MOVIMENTO
       </Button>
@@ -85,22 +85,22 @@ const Index = () => {
         className="relative overflow-hidden"
         style={{ background: "var(--hero-gradient)" }}
       >
-        <div className="relative container mx-auto px-4 sm:px-6 pt-20 md:pt-28 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
+        <div className="relative container mx-auto px-5 sm:px-6 pt-20 md:pt-28 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            <div className="flex-1 text-foreground text-center lg:text-left">
-              <p className="text-warm text-base sm:text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
+            <div className="flex-1 text-foreground text-center lg:text-left overflow-hidden">
+              <p className="text-warm text-xs sm:text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
               <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-warm mb-6 tracking-tight">
                 O Próximo Passo
               </p>
-              <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-4">
+              <h1 className="font-display text-base sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-4 px-1 sm:px-0">
                 Você não precisa de mais informação.
                 <br />
                 <span className="text-warm">Precisa decidir o próximo movimento da sua carreira.</span>
               </h1>
-              <p className="text-lg sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
+              <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0">
                 Uma imersão estratégica para quem não pode mais adiar uma decisão de carreira.
               </p>
-              <p className="text-base sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
+              <p className="text-xs sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0">
                 Clareza, direção e um plano estruturado para os próximos 30 dias.
               </p>
 
@@ -656,7 +656,7 @@ const Index = () => {
         <a onClick={handleCTAClick} className="cursor-pointer block">
           <Button
             size="lg"
-            className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-base px-6 py-6 rounded-lg shadow-lg tracking-wide w-full"
+            className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-base px-4 py-5 rounded-lg shadow-lg tracking-wide w-full"
           >
             QUERO DECIDIR MEU PRÓXIMO MOVIMENTO
           </Button>
