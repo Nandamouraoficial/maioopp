@@ -97,7 +97,7 @@ const Index = () => {
                 <br />
                 <span className="text-warm">Precisa decidir o próximo movimento da sua carreira.</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
+              <p className="text-lg sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Uma imersão estratégica para quem não pode mais adiar uma decisão de carreira.
               </p>
               <p className="text-sm sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
