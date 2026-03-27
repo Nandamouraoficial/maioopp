@@ -356,7 +356,7 @@ const Index = () => {
             ))}
           </div>
 
-          <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
+          <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-6">
             Investimento
           </h3>
 
