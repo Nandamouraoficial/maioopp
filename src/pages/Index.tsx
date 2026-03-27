@@ -645,6 +645,21 @@ const Index = () => {
           <p className="text-xs opacity-50 mt-4">© 2026 O Próximo Passo</p>
         </div>
       </footer>
+
+      {/* ═══════════ STICKY CTA MOBILE ═══════════ */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background/95 backdrop-blur-sm border-t border-border/50 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+        <a onClick={handleCTAClick} className="cursor-pointer block">
+          <Button
+            size="lg"
+            className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm px-6 py-6 rounded-lg shadow-lg tracking-wide w-full"
+          >
+            QUERO DECIDIR MEU PRÓXIMO MOVIMENTO
+          </Button>
+        </a>
+      </div>
+
+      {/* Spacer for sticky CTA on mobile */}
+      <div className="h-20 md:hidden" />
     </main>
   );
 };
