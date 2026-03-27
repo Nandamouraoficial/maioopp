@@ -55,7 +55,7 @@ const Index = () => {
 
   return (
     <main className="min-h-screen bg-background text-foreground font-body">
-      <SealBadge />
+      
 
       {/* ═══════════ 1. HERO ═══════════ */}
       <section
