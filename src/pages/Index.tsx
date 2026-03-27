@@ -379,7 +379,7 @@ const Index = () => {
             <div className="bg-warm border border-warm/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
-                <p className="text-lg text-primary leading-relaxed">
+                <p className="text-lg md:text-xl text-primary leading-relaxed">
                   "Minha carreira como executiva estava indo bem. Bônus, promoções, resultados e reconhecimento — tudo o que o mercado usa para medir sucesso. Mas por dentro eu estava quebrando, e ninguém via. A Fernanda não me disse o que fazer — ela montou a estratégia junto comigo e colocou as decisões na mesa para eu escolher. Foi a primeira vez que alguém tratou minha carreira com método e como decisão estratégica, não como problema emocional. Resultado: saí da paralisia da executiva bem-sucedida à beira do burnout e abri minha consultoria."
                 </p>
               </div>
