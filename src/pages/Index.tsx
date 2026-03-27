@@ -488,17 +488,16 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-background/85" />
+        <div className="absolute inset-0 bg-background/50 backdrop-blur-[1px]" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.3), hsla(var(--background) / 0.85) 40%, hsl(var(--background)))" }} />
         <div className="relative container mx-auto px-4 sm:px-6 max-w-3xl text-center text-foreground flex flex-col justify-end min-h-[320px] sm:min-h-[400px]">
-          <p className="text-lg md:text-xl text-muted-foreground mb-6">
+          <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed mb-6">
             Se você já percebeu que deixar a carreira no automático pode custar caro,
-            <br />essa é a sala para decidir com método.
+            <br />adiar essa decisão não resolve.
           </p>
-          <div className="flex flex-col items-center gap-2 mb-10">
-            <span className="text-foreground font-bold">Grupo reduzido. Discussão estratégica real.</span>
-            <span className="text-foreground font-bold">Próximo movimento com direção.</span>
-          </div>
-          {ctaButton}
+          <p className="text-lg text-foreground/80 font-bold mb-10">
+            Essa é a sala para decidir com método.
+          </p>
+          {ctaButtonFinal}
         </div>
       </section>
 
