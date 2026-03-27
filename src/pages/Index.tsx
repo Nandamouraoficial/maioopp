@@ -295,18 +295,18 @@ const Index = () => {
       <Divider />
 
       {/* ═══════════ 7. DEPOIMENTOS ═══════════ */}
-      <section className="relative bg-background py-16 md:py-24">
+      <section className="relative bg-accent py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-10">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-accent-foreground text-center mb-10">
             Quem já passou pela consultoria estratégica
           </h2>
 
           <div className="space-y-8">
             {/* Carla */}
-            <div className="bg-card border border-border rounded-2xl p-8 md:p-10 relative">
-              <Quote className="w-10 h-10 text-accent/30 absolute top-6 left-6" />
+            <div className="bg-accent-foreground/10 border border-accent-foreground/20 rounded-2xl p-8 md:p-10 relative">
+              <Quote className="w-10 h-10 text-accent-foreground/30 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-accent-foreground/80 leading-relaxed">
                   "Minha carreira como executiva estava indo bem. Bônus, promoções, resultados e reconhecimento — tudo o que o mercado usa para medir sucesso. Mas por dentro eu estava quebrando, e ninguém via. A Fernanda não me disse o que fazer — ela montou a estratégia junto comigo e colocou as decisões na mesa para eu escolher. Foi a primeira vez que alguém tratou minha carreira com método e como decisão estratégica, não como problema emocional. Resultado: saí da paralisia da executiva bem-sucedida à beira do burnout e abri minha consultoria."
                 </p>
               </div>
