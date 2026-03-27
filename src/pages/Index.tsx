@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check, Calendar, Clock, Monitor, Users, Shield, Quote, ChevronDown } from "lucide-react";
-import CountdownTimer from "@/components/CountdownTimer";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const CTA_URL = "https://pay.kiwify.com.br/VrHaDPn";
 
@@ -14,22 +13,24 @@ const Divider = () => (
   </div>
 );
 
-const FAQItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => {
-  const [open, setOpen] = useState(false);
+const FAQItem = ({ question, answer, defaultOpen = false }: { question: string; answer: React.ReactNode; defaultOpen?: boolean }) => {
+  const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="border border-border rounded-xl overflow-hidden">
+    <div className="border border-border rounded-xl overflow-hidden bg-muted/20">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between p-5 text-left hover:bg-muted/30 transition-colors"
       >
         <span className="text-foreground font-bold text-base pr-4">{question}</span>
-        <ChevronDown className={`w-5 h-5 text-warm shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
+        <ChevronDown className={`w-5 h-5 text-warm shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && (
-        <div className="px-5 pb-5 pt-0">
-          <div className="text-muted-foreground text-base leading-relaxed space-y-3">{answer}</div>
+      <div className={`grid transition-all duration-300 ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+        <div className="overflow-hidden">
+          <div className="px-5 pb-5 pt-0">
+            <div className="text-muted-foreground text-base leading-relaxed space-y-3">{answer}</div>
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
@@ -76,7 +77,7 @@ const Index = () => {
   );
 
   return (
-    <main className="min-h-screen bg-background text-foreground font-body">
+    <main className="min-h-screen bg-background text-foreground font-body scroll-smooth">
       
 
       {/* ═══════════ 1. HERO ═══════════ */}
@@ -94,7 +95,7 @@ const Index = () => {
               <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-4">
                 Você não precisa de mais informação.
                 <br />
-                <span className="text-warm">Precisa decidir o seu próximo movimento.</span>
+                <span className="text-warm">Precisa decidir o próximo movimento da sua carreira.</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Uma imersão estratégica para quem não pode mais adiar uma decisão de carreira.
@@ -403,12 +404,12 @@ const Index = () => {
       <Divider />
 
       {/* ═══════════ 7.5. BLOCO DE CONSEQUÊNCIA ═══════════ */}
-      <section className="relative bg-background py-20 md:py-28">
+      <section className="relative bg-background py-24 md:py-36">
         <div className="container mx-auto px-4 sm:px-6 max-w-2xl">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
             Se você não decidir agora
           </h2>
-          <div className="text-lg md:text-xl leading-relaxed text-muted-foreground space-y-6">
+          <div className="text-lg md:text-xl leading-loose text-muted-foreground space-y-8">
             <p>
               A maioria das carreiras não trava por falta de capacidade.
               <br />
@@ -446,11 +447,10 @@ const Index = () => {
             </ul>
             <p>
               E quando olha para trás,
-              <br />passou mais um ano —
-              <br /><strong className="text-foreground">sem mudança relevante.</strong>
+              <br /><strong className="text-foreground">passou mais um ano — sem mudança relevante.</strong>
             </p>
             <p>
-              O custo de não decidir raramente aparece no curto prazo.
+              <strong className="text-foreground">O custo de não decidir</strong> raramente aparece no curto prazo.
               <br />Mas se acumula.
             </p>
             <p className="text-foreground font-bold text-xl">
@@ -527,7 +527,7 @@ const Index = () => {
             </p>
           </div>
 
-          <CountdownTimer />
+          
 
           {ctaButtonFinal}
 
@@ -575,6 +575,7 @@ const Index = () => {
           </h2>
           <div className="space-y-3">
             <FAQItem
+              defaultOpen
               question="Transição de carreira é só para quem está desempregado?"
               answer={<>
                 <p>Não. Transição não começa quando você sai de uma empresa. Começa quando você percebe que continuar como está já não é suficiente.</p>
@@ -622,7 +623,7 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.4), hsla(var(--background) / 0.9) 40%, hsl(var(--background)))" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.6), hsla(var(--background) / 0.95) 40%, hsl(var(--background)))" }} />
         <div className="relative container mx-auto px-4 sm:px-6 max-w-3xl text-center text-foreground flex flex-col justify-end min-h-[320px] sm:min-h-[400px]">
           <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed mb-4">
             Se você já percebeu que deixar a carreira
@@ -644,6 +645,21 @@ const Index = () => {
           <p className="text-xs opacity-50 mt-4">© 2026 O Próximo Passo</p>
         </div>
       </footer>
+
+      {/* ═══════════ STICKY CTA MOBILE ═══════════ */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background/95 backdrop-blur-sm border-t border-border/50 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+        <a onClick={handleCTAClick} className="cursor-pointer block">
+          <Button
+            size="lg"
+            className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm px-6 py-6 rounded-lg shadow-lg tracking-wide w-full"
+          >
+            QUERO DECIDIR MEU PRÓXIMO MOVIMENTO
+          </Button>
+        </a>
+      </div>
+
+      {/* Spacer for sticky CTA on mobile */}
+      <div className="h-20 md:hidden" />
     </main>
   );
 };
