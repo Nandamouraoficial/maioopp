@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check, Calendar, Clock, Monitor, Users, Shield, Quote, ChevronDown } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
-import SealBadge from "@/components/SealBadge";
+
 import { useState } from "react";
 
 const CTA_URL = "https://pay.kiwify.com.br/VrHaDPn";
