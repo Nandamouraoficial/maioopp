@@ -64,6 +64,17 @@ const Index = () => {
     </a>
   );
 
+  const ctaButtonPasso = (
+    <a onClick={handleCTAClick} className="cursor-pointer">
+      <Button
+        size="lg"
+        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-base px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+      >
+        QUERO DEFINIR MEU PRÓXIMO PASSO
+      </Button>
+    </a>
+  );
+
   return (
     <main className="min-h-screen bg-background text-foreground font-body">
       
@@ -77,13 +88,19 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="flex-1 text-foreground text-center lg:text-left">
               <p className="text-accent text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
-              <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-8">
+              <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-accent mb-6 tracking-tight">
+                O Próximo Passo
+              </p>
+              <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-4">
                 Você não precisa de mais informação.
                 <br />
                 <span className="text-accent">Precisa decidir o seu próximo movimento.</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
-                Um dia inteiro de trabalho estratégico para executivas que não podem mais adiar uma decisão de carreira.
+              <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
+                Uma imersão estratégica para executivas que não podem mais adiar uma decisão de carreira.
+              </p>
+              <p className="text-sm sm:text-base text-accent font-semibold mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
+                Clareza, direção e um plano estruturado para os próximos 30 dias.
               </p>
 
               <div className="flex flex-col items-center lg:items-start gap-3">
@@ -346,6 +363,72 @@ const Index = () => {
 
       <Divider />
 
+      {/* ═══════════ 7.5. BLOCO DE CONSEQUÊNCIA ═══════════ */}
+      <section className="relative bg-background py-20 md:py-28">
+        <div className="container mx-auto px-4 sm:px-6 max-w-2xl">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+            Se você não decidir agora
+          </h2>
+          <div className="text-lg md:text-xl leading-relaxed text-muted-foreground space-y-6">
+            <p>
+              A maioria das carreiras não trava por falta de capacidade.
+              <br />
+              <strong className="text-foreground">Trava por falta de decisão.</strong>
+            </p>
+            <p>
+              E o que acontece não é imediato —
+              <br />é silencioso.
+            </p>
+            <p>
+              Você continua entregando bem,
+              <br />continua sendo reconhecida,
+              <br />continua ocupada…
+            </p>
+            <p className="text-foreground font-semibold">
+              Mas sem perceber, começa a repetir o mesmo ciclo:
+            </p>
+            <ul className="space-y-2 pl-1">
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-1">•</span>
+                <span>mais do mesmo</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-1">•</span>
+                <span>menos crescimento real</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-1">•</span>
+                <span>decisões adiadas</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-1">•</span>
+                <span>oportunidades que passam</span>
+              </li>
+            </ul>
+            <p>
+              E quando olha para trás,
+              <br />passou mais um ano —
+              <br /><strong className="text-foreground">sem mudança relevante.</strong>
+            </p>
+            <p>
+              O custo de não decidir raramente aparece no curto prazo.
+              <br />Mas se acumula.
+            </p>
+            <p className="text-foreground font-bold text-xl">
+              E, em algum momento, cobra.
+            </p>
+            <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-8">
+              <p className="text-foreground font-semibold text-lg leading-relaxed">
+                O Próximo Passo existe exatamente para interromper esse ciclo —
+                <br />antes que ele se repita mais uma vez.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
       {/* ═══════════ 8. INFORMAÇÕES PRÁTICAS + INVESTIMENTO ═══════════ */}
       <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center">
@@ -407,7 +490,7 @@ const Index = () => {
 
           <CountdownTimer />
 
-          {ctaButton}
+          {ctaButtonFinal}
 
           {/* Garantia */}
           <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-8 flex flex-col items-center gap-4 max-w-xl mx-auto mt-12">
@@ -416,7 +499,7 @@ const Index = () => {
               Garantia de resultado
             </p>
             <p className="text-primary-foreground/70 text-base leading-relaxed">
-              Se ao final da imersão você não sair com sua decisão sobre o próximo movimento e com um plano estruturado para os próximos 30 dias, eu devolvo 100% do seu investimento.
+              Se ao final de O Próximo Passo você não sair com sua decisão sobre o próximo movimento e com um plano estruturado para os próximos 30 dias, eu devolvo 100% do seu investimento.
             </p>
             <p className="text-primary-foreground font-bold text-lg">
               Sem burocracia.
@@ -453,69 +536,39 @@ const Index = () => {
           </h2>
           <div className="space-y-3">
             <FAQItem
-              question="Transição de carreira é só para quem está desempregada ou saindo da empresa?"
+              question="Transição de carreira é só para quem está desempregada?"
               answer={<>
                 <p>Não. Transição não começa quando você sai de uma empresa. Começa quando você percebe que continuar como está já não é suficiente.</p>
-                <p>A maioria das executivas que participam não está desempregada — está exatamente no ponto em que precisa decidir o próximo movimento com mais critério.</p>
-                <p>Você não precisa estar em crise para participar. Mas, se já percebeu que precisa evoluir e ainda não estruturou como, você já está em transição.</p>
+                <p>A maioria das executivas que participam de O Próximo Passo não está desempregada — está no ponto em que precisa decidir com mais critério.</p>
                 <p className="font-semibold text-foreground">E adiar essa decisão costuma custar mais do que parece.</p>
               </>}
             />
             <FAQItem
-              question="Preciso estar em transição de carreira para participar?"
+              question="Preciso estar em transição?"
               answer={<>
-                <p>Não no sentido tradicional. Você não precisa estar saindo de uma empresa ou disponível no mercado.</p>
-                <p>Mas precisa estar em um momento em que continuar como está já não é suficiente — e o próximo passo ainda não está claro.</p>
-                <p className="font-semibold text-foreground">Esse é exatamente o ponto em que a imersão mais gera valor.</p>
+                <p>Não no sentido tradicional. Mas precisa estar em um momento em que continuar como está já não é suficiente.</p>
+                <p className="font-semibold text-foreground">Esse é exatamente o ponto em que O Próximo Passo mais gera valor.</p>
               </>}
             />
             <FAQItem
-              question="A imersão é individual ou em grupo?"
-              answer={<>
-                <p>É em grupo, com até 15 executivas. O grupo é intencionalmente reduzido para garantir profundidade, troca qualificada e decisões com contexto real — não genéricas.</p>
-                <p className="font-semibold text-foreground">Não é uma sessão aberta. É um ambiente estratégico.</p>
-              </>}
-            />
-            <FAQItem
-              question="Como funciona a garantia?"
-              answer={<>
-                <p>Se ao final da imersão você não sair com uma decisão clara sobre o seu próximo movimento e um plano estruturado para os próximos 30 dias, você pode solicitar 100% do valor investido de volta.</p>
-                <p className="font-semibold text-foreground">Sem burocracia.</p>
-              </>}
-            />
-            <FAQItem
-              question="Qual é o formato?"
-              answer={<>
-                <p>Um encontro online, ao vivo, com duração de 6 horas.</p>
-                <p>Estruturado em etapas que levam você de um cenário indefinido a uma decisão concreta — com aplicação direta no seu contexto.</p>
-              </>}
-            />
-            <FAQItem
-              question="Preciso me preparar de alguma forma?"
-              answer={<>
-                <p>Não. Você chega com o seu momento atual — e isso é suficiente.</p>
-                <p>A imersão foi desenhada para organizar o que hoje está disperso e transformar em decisão estruturada.</p>
-              </>}
-            />
-            <FAQItem
-              question="E se eu não puder participar no dia?"
-              answer={<>
-                <p>Por ser uma imersão ao vivo, com dinâmica construída em tempo real, não há gravação.</p>
-                <p>Caso não possa participar, sua vaga pode ser transferida para uma próxima edição (mediante aviso prévio).</p>
-              </>}
-            />
-            <FAQItem
-              question="Isso funciona para quem já está bem na carreira?"
+              question="Funciona para quem já está bem na carreira?"
               answer={<>
                 <p>Sim. A maioria das participantes já tem uma carreira estruturada.</p>
-                <p className="font-semibold text-foreground">O ponto não é "dar certo" — é garantir que o próximo movimento seja feito com critério, e não no automático.</p>
+                <p className="font-semibold text-foreground">O ponto não é "dar certo" — é garantir que o próximo movimento seja feito com critério.</p>
               </>}
             />
             <FAQItem
               question="O que acontece depois da imersão?"
               answer={<>
-                <p>Você sai com uma decisão tomada e um plano claro para os próximos 30 dias.</p>
-                <p>Para quem quiser aprofundar, existe a possibilidade de continuidade em mentoria — mas a imersão, por si só, já entrega um avanço concreto.</p>
+                <p>Você sai com uma decisão e um plano claro para os próximos 30 dias.</p>
+                <p>Se quiser aprofundar, existe continuidade em mentoria — mas a imersão já entrega avanço concreto.</p>
+              </>}
+            />
+            <FAQItem
+              question="Como funciona a garantia?"
+              answer={<>
+                <p>Se você não sair com clareza e um plano estruturado, pode solicitar reembolso integral.</p>
+                <p className="font-semibold text-foreground">Sem burocracia.</p>
               </>}
             />
           </div>
@@ -530,16 +583,16 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-background/50 backdrop-blur-[1px]" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.3), hsla(var(--background) / 0.85) 40%, hsl(var(--background)))" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.4), hsla(var(--background) / 0.9) 40%, hsl(var(--background)))" }} />
         <div className="relative container mx-auto px-4 sm:px-6 max-w-3xl text-center text-foreground flex flex-col justify-end min-h-[320px] sm:min-h-[400px]">
-          <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed mb-6">
+          <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed mb-4">
             Se você já percebeu que deixar a carreira no automático pode custar caro,
             <br />adiar essa decisão não resolve.
           </p>
-          <p className="text-lg text-foreground/80 font-bold mb-10">
-            Essa é a sala para decidir com método.
+          <p className="text-lg text-accent font-bold mb-10">
+            O Próximo Passo é a sala para decidir com método.
           </p>
-          {ctaButtonFinal}
+          {ctaButtonPasso}
         </div>
       </section>
 
