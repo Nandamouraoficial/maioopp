@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 30 25% 90%;
+    --background: 32 35% 87%;
     --foreground: 30 18% 15%;
 
     --card: 30 20% 95%;
@@ -37,7 +37,7 @@
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(30 25% 88%), hsl(30 20% 92%), hsl(30 25% 90%));
+    --hero-gradient: linear-gradient(135deg, hsl(32 35% 85%), hsl(32 30% 89%), hsl(32 35% 87%));
     --cta-hover: 30 20% 18%;
 
     --sidebar-background: 30 25% 88%;

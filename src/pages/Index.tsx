@@ -95,7 +95,7 @@ const Index = () => {
 
             <div className="flex-1 flex justify-center lg:justify-end">
               <img
-                src="/images/foto_terno.jpeg"
+                src="/images/final-equipe.png"
                 alt="Fernanda Moura — Estrategista Executiva de Carreira"
                 className="w-full max-w-md lg:max-w-lg max-h-[400px] rounded-2xl shadow-2xl object-cover object-[center_15%]"
                 loading="eager"
@@ -255,7 +255,7 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-5xl mx-auto">
             <div className="flex-shrink-0">
               <img
-                src="/images/sobre-poltrona.png"
+                src="/images/foto_terno.jpeg"
                 alt="Fernanda Moura — Estrategista Executiva"
                 className="w-72 md:w-80 rounded-2xl shadow-xl object-cover"
                 loading="lazy"
@@ -464,8 +464,8 @@ const Index = () => {
       {/* ═══════════ 10. CTA FINAL ═══════════ */}
       <section className="relative overflow-hidden pt-40 sm:pt-48 md:pt-64 pb-12">
         <img
-          src="/images/final-equipe.png"
-          alt="Fernanda Moura com equipe"
+          src="/images/sobre-poltrona.png"
+          alt="Fernanda Moura"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
