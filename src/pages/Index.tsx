@@ -100,7 +100,7 @@ const Index = () => {
               <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0">
                 Uma imersão estratégica para quem não pode mais adiar uma decisão de carreira.
               </p>
-              <p className="text-sm sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0">
+              <p className="text-xs sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0">
                 Clareza, direção e um plano estruturado para os próximos 30 dias.
               </p>
 
