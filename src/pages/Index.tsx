@@ -21,13 +21,13 @@ const FAQItem = ({ question, answer, defaultOpen = false }: { question: string; 
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between p-5 text-left hover:bg-muted/30 transition-colors"
       >
-        <span className="text-foreground font-bold text-base pr-4">{question}</span>
+        <span className="text-foreground font-bold text-lg pr-4">{question}</span>
         <ChevronDown className={`w-5 h-5 text-warm shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
       </button>
       <div className={`grid transition-all duration-300 ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
         <div className="overflow-hidden">
           <div className="px-5 pb-5 pt-0">
-            <div className="text-muted-foreground text-base leading-relaxed space-y-3">{answer}</div>
+            <div className="text-muted-foreground text-base md:text-lg leading-relaxed space-y-3">{answer}</div>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ const Index = () => {
     <a onClick={handleCTAClick} className="cursor-pointer">
       <Button
         size="lg"
-        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-base px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-base sm:text-lg px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
       >
         QUERO DECIDIR MEU PRÓXIMO MOVIMENTO
       </Button>
@@ -58,7 +58,7 @@ const Index = () => {
     <a onClick={handleCTAClick} className="cursor-pointer">
       <Button
         size="lg"
-        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-base px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-base sm:text-lg px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
       >
         QUERO SAIR COM UMA DECISÃO TOMADA
       </Button>
@@ -69,7 +69,7 @@ const Index = () => {
     <a onClick={handleCTAClick} className="cursor-pointer">
       <Button
         size="lg"
-        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-base px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-base sm:text-lg px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
       >
         QUERO DEFINIR MEU PRÓXIMO PASSO
       </Button>
@@ -88,7 +88,7 @@ const Index = () => {
         <div className="relative container mx-auto px-4 sm:px-6 pt-20 md:pt-28 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="flex-1 text-foreground text-center lg:text-left">
-              <p className="text-warm text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
+              <p className="text-warm text-base sm:text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
               <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-warm mb-6 tracking-tight">
                 O Próximo Passo
               </p>
@@ -97,10 +97,10 @@ const Index = () => {
                 <br />
                 <span className="text-warm">Precisa decidir o próximo movimento da sua carreira.</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
+              <p className="text-lg sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Uma imersão estratégica para quem não pode mais adiar uma decisão de carreira.
               </p>
-              <p className="text-sm sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
+              <p className="text-base sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Clareza, direção e um plano estruturado para os próximos 30 dias.
               </p>
 
@@ -134,7 +134,7 @@ const Index = () => {
       {/* ═══════════ MINI PROVA SOCIAL ═══════════ */}
       <section className="bg-background py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground text-center mb-12">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
             O que acontece quando essa decisão é feita com método
           </h2>
           <div className="space-y-12">
@@ -181,7 +181,7 @@ const Index = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-6">
             Para quem é essa imersão
           </h2>
-          <p className="text-primary-foreground/80 text-lg text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-primary-foreground/80 text-lg md:text-xl text-center mb-12 max-w-2xl mx-auto">
             Você não está em crise — mas sabe que precisa decidir melhor o próximo movimento.
           </p>
           <ul className="space-y-4 max-w-xl mx-auto mb-10">
@@ -192,14 +192,14 @@ const Index = () => {
               "Quer estruturar os próximos 1 a 3 anos com critério — não por reação ao mercado",
               "Precisa de um espaço estratégico, não motivacional, para pensar o próximo movimento",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-lg text-primary-foreground/90">
+              <li key={item} className="flex items-start gap-3 text-lg md:text-xl text-primary-foreground/90">
                 <Check className="w-5 h-5 text-warm mt-1 shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
           </ul>
           <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-6 max-w-xl mx-auto text-center">
-            <p className="text-primary-foreground font-bold text-lg mb-2">
+            <p className="text-primary-foreground font-bold text-lg md:text-xl mb-2">
               Você não precisa estar em crise para participar.
             </p>
             <p className="text-primary-foreground/70 text-base">
@@ -217,7 +217,7 @@ const Index = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             O que acontece em 6 horas de imersão
           </h2>
-          <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg md:text-xl mb-12 max-w-2xl mx-auto">
             Cada etapa foi desenhada para levar você de um cenário indefinido a uma decisão concreta.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-14">
@@ -232,7 +232,7 @@ const Index = () => {
                 className="border border-warm/80 rounded-xl p-6 text-left hover:shadow-md transition-shadow bg-warm"
               >
                 <span className="text-primary-foreground font-display text-2xl font-bold">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-primary text-lg mt-3">{item}</p>
+                <p className="text-primary text-lg md:text-xl mt-3">{item}</p>
               </div>
             ))}
           </div>
@@ -266,7 +266,7 @@ const Index = () => {
               "Um plano de ação para os próximos 30 dias — da intenção à execução",
               "Clareza sobre o que parar de fazer para não continuar investindo no caminho errado",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-lg text-primary-foreground/90">
+              <li key={item} className="flex items-start gap-3 text-lg md:text-xl text-primary-foreground/90">
                 <Check className="w-5 h-5 text-warm mt-1 shrink-0" />
                 <span>{item}</span>
               </li>
@@ -285,7 +285,7 @@ const Index = () => {
             <br />
             É excesso de caminho sem critério.
           </h2>
-          <div className="text-lg md:text-xl leading-relaxed text-muted-foreground space-y-6 max-w-2xl mx-auto">
+          <div className="text-xl md:text-2xl leading-relaxed text-muted-foreground space-y-6 max-w-2xl mx-auto">
             <p>
               Você pode continuar estudando.
               <br />Pode fazer mais um curso.
@@ -379,7 +379,7 @@ const Index = () => {
             <div className="bg-warm border border-warm/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
-                <p className="text-lg text-primary leading-relaxed">
+                <p className="text-lg md:text-xl text-primary leading-relaxed">
                   "Minha carreira como executiva estava indo bem. Bônus, promoções, resultados e reconhecimento — tudo o que o mercado usa para medir sucesso. Mas por dentro eu estava quebrando, e ninguém via. A Fernanda não me disse o que fazer — ela montou a estratégia junto comigo e colocou as decisões na mesa para eu escolher. Foi a primeira vez que alguém tratou minha carreira com método e como decisão estratégica, não como problema emocional. Resultado: saí da paralisia da executiva bem-sucedida à beira do burnout e abri minha consultoria."
                 </p>
               </div>
@@ -393,7 +393,7 @@ const Index = () => {
             <div className="bg-warm border border-warm/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
-                <p className="text-lg text-primary leading-relaxed">
+                <p className="text-lg md:text-xl text-primary leading-relaxed">
                   "Eu já era Diretora de Impostos para a América Latina. Resultado não faltava. O que faltava era clareza sobre o próximo passo — e a segurança para me posicionar além da área técnica. A Fernanda montou comigo uma estratégia que eu não conseguia enxergar sozinha. Ganhei estrutura na comunicação, presença nos fóruns que importam e passei a atrair as oportunidades certas em vez de esperar por elas. Não precisei mudar de empresa. Mudei de posicionamento."
                 </p>
               </div>
@@ -414,7 +414,7 @@ const Index = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
             Se você não decidir agora
           </h2>
-          <div className="text-lg md:text-xl leading-loose text-muted-foreground space-y-8">
+          <div className="text-xl md:text-2xl leading-loose text-muted-foreground space-y-8">
             <p>
               A maioria das carreiras não trava por falta de capacidade.
               <br />
@@ -656,7 +656,7 @@ const Index = () => {
         <a onClick={handleCTAClick} className="cursor-pointer block">
           <Button
             size="lg"
-            className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm px-6 py-6 rounded-lg shadow-lg tracking-wide w-full"
+            className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-base px-6 py-6 rounded-lg shadow-lg tracking-wide w-full"
           >
             QUERO DECIDIR MEU PRÓXIMO MOVIMENTO
           </Button>
