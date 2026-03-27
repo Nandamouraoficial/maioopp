@@ -125,11 +125,11 @@ const Index = () => {
               </li>
             ))}
           </ul>
-          <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 max-w-xl mx-auto text-center">
-            <p className="text-foreground font-bold text-lg mb-2">
+          <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-6 max-w-xl mx-auto text-center">
+            <p className="text-primary-foreground font-bold text-lg mb-2">
               Você não precisa estar em crise para participar.
             </p>
-            <p className="text-muted-foreground text-base">
+            <p className="text-primary-foreground/70 text-base">
               Mas se já percebeu que deixar a carreira no automático tem um custo, essa é a sala certa.
             </p>
           </div>
