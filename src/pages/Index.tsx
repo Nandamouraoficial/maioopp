@@ -119,7 +119,7 @@ const Index = () => {
               "Quer estruturar os próximos 1 a 3 anos com critério — não por reação ao mercado",
               "Precisa de um espaço estratégico, não motivacional, para pensar o próximo movimento",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-lg text-foreground">
+              <li key={item} className="flex items-start gap-3 text-lg text-primary-foreground/90">
                 <Check className="w-5 h-5 text-accent mt-1 shrink-0" />
                 <span>{item}</span>
               </li>
