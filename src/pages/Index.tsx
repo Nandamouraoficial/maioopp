@@ -106,9 +106,9 @@ const Index = () => {
       </section>
 
       {/* ═══════════ 2. PARA QUEM É ═══════════ */}
-      <section className="relative bg-secondary py-20 md:py-28">
+      <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12">
             Para quem é essa imersão
           </h2>
           <ul className="space-y-4 max-w-xl mx-auto mb-10">
@@ -119,17 +119,17 @@ const Index = () => {
               "Quer estruturar os próximos 1 a 3 anos com critério — não por reação ao mercado",
               "Precisa de um espaço estratégico, não motivacional, para pensar o próximo movimento",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-lg text-foreground">
+              <li key={item} className="flex items-start gap-3 text-lg text-primary-foreground/90">
                 <Check className="w-5 h-5 text-accent mt-1 shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
           </ul>
-          <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 max-w-xl mx-auto text-center">
-            <p className="text-foreground font-bold text-lg mb-2">
+          <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-6 max-w-xl mx-auto text-center">
+            <p className="text-primary-foreground font-bold text-lg mb-2">
               Você não precisa estar em crise para participar.
             </p>
-            <p className="text-muted-foreground text-base">
+            <p className="text-primary-foreground/70 text-base">
               Mas se já percebeu que deixar a carreira no automático tem um custo, essa é a sala certa.
             </p>
           </div>
@@ -180,9 +180,9 @@ const Index = () => {
       <Divider />
 
       {/* ═══════════ 4. O QUE ELA SAI LEVANDO ═══════════ */}
-      <section className="relative bg-secondary py-20 md:py-28">
+      <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12">
             O que você leva ao final da imersão
           </h2>
           <ul className="space-y-5 max-w-xl mx-auto">
@@ -193,7 +193,7 @@ const Index = () => {
               "Um plano de ação para os próximos 30 dias — da intenção à execução",
               "Clareza sobre o que parar de fazer para não continuar investindo no caminho errado",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-lg text-foreground">
+              <li key={item} className="flex items-start gap-3 text-lg text-primary-foreground/90">
                 <Check className="w-5 h-5 text-accent mt-1 shrink-0" />
                 <span>{item}</span>
               </li>
@@ -247,9 +247,9 @@ const Index = () => {
       <Divider />
 
       {/* ═══════════ 6. SOBRE FERNANDA MOURA ═══════════ */}
-      <section className="relative bg-secondary py-20 md:py-28">
+      <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-14">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-14">
             Quem conduz
           </h2>
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-5xl mx-auto">
@@ -262,27 +262,27 @@ const Index = () => {
               />
             </div>
             <div className="flex-1 text-center lg:text-left">
-              <h3 className="font-display text-2xl font-bold text-foreground mb-1">
+              <h3 className="font-display text-2xl font-bold text-primary-foreground mb-1">
                 Fernanda Moura
               </h3>
               <p className="text-accent font-bold mb-6">
                 Estrategista Executiva de Carreira
               </p>
-              <div className="text-lg leading-relaxed text-muted-foreground space-y-4">
+              <div className="text-lg leading-relaxed text-primary-foreground/70 space-y-4">
                 <p>
                   26 anos dentro do sistema corporativo —{" "}
-                  <strong className="text-foreground">Coca-Cola, Cargill, Kraft Heinz, Kimberly-Clark e MBRF (Sadia e Perdigão)</strong>.
+                  <strong className="text-primary-foreground">Coca-Cola, Cargill, Kraft Heinz, Kimberly-Clark e MBRF (Sadia e Perdigão)</strong>.
                   Passou por gerência, diretoria e C-Level internacional para América Latina e América Central, liderando projetos globais e equipes em 15 países simultaneamente.
                 </p>
                 <p>
                   Em 2021, fez o que muitas executivas pensam mas não executam:{" "}
-                  <strong className="text-foreground">parou. Intencionalmente.</strong>{" "}
+                  <strong className="text-primary-foreground">parou. Intencionalmente.</strong>{" "}
                   Para decidir o próximo movimento com método — não com impulso.
                 </p>
                 <p>
                   Já conduziu 23 transições profissionais reais na própria carreira. Sabe exatamente o que funciona — e o que é perda de tempo.
                 </p>
-                <p className="font-bold text-foreground">
+                 <p className="font-bold text-primary-foreground">
                   Quem conduz essa imersão não fala de carreira de fora.
                   Ela tomou essas decisões de dentro.
                 </p>
@@ -336,9 +336,9 @@ const Index = () => {
       <Divider />
 
       {/* ═══════════ 8. INFORMAÇÕES PRÁTICAS + INVESTIMENTO ═══════════ */}
-      <section className="relative bg-secondary py-20 md:py-28">
+      <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-8">
             Informações práticas
           </h2>
 
@@ -349,39 +349,39 @@ const Index = () => {
               { icon: Monitor, label: "Online e ao vivo" },
               { icon: Users, label: "Grupo fechado — até 15 vagas" },
             ].map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center gap-3 bg-card border border-border rounded-xl p-4">
+              <div key={label} className="flex items-center gap-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-4">
                 <Icon className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-foreground text-sm font-medium">{label}</span>
+                <span className="text-primary-foreground text-sm font-medium">{label}</span>
               </div>
             ))}
           </div>
 
-          <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
+          <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-6">
             Investimento
           </h3>
 
-          <div className="bg-card rounded-xl p-6 mb-8 max-w-xl mx-auto text-left">
-            <p className="text-muted-foreground text-base leading-relaxed">
+          <div className="bg-primary-foreground/10 rounded-xl p-6 mb-8 max-w-xl mx-auto text-left">
+            <p className="text-primary-foreground/70 text-base leading-relaxed">
               Uma sessão individual com uma ex-diretora executiva C-level custa entre{" "}
-              <strong className="text-foreground">R$ 3.000 e R$ 10.000</strong>.
+              <strong className="text-primary-foreground">R$ 3.000 e R$ 10.000</strong>.
             </p>
-            <p className="text-muted-foreground text-base leading-relaxed mt-4">
+            <p className="text-primary-foreground/70 text-base leading-relaxed mt-4">
               Nesta imersão, você participa de um dia inteiro de trabalho estratégico, com profundidade real e aplicação direta no seu contexto, por:
             </p>
           </div>
 
-          <div className="bg-card rounded-2xl py-10 px-8 mb-8 inline-block">
-            <p className="font-body text-primary text-xl md:text-2xl font-semibold">
+          <div className="bg-primary-foreground/10 rounded-2xl py-10 px-8 mb-8 inline-block">
+            <p className="font-body text-primary-foreground text-xl md:text-2xl font-semibold">
               12x de R$ 139,90
             </p>
-            <p className="text-muted-foreground text-sm mt-2">ou R$ 1.497 à vista</p>
+            <p className="text-primary-foreground/60 text-sm mt-2">ou R$ 1.497 à vista</p>
           </div>
 
           <div className="max-w-xl mx-auto mb-8">
-            <p className="text-muted-foreground text-base">
+            <p className="text-primary-foreground/70 text-base">
               O grupo é reduzido para garantir qualidade nas discussões e profundidade na condução.
             </p>
-            <p className="text-foreground font-bold text-base mt-2">
+            <p className="text-primary-foreground font-bold text-base mt-2">
               Por isso, as vagas são limitadas.
             </p>
           </div>
@@ -391,15 +391,15 @@ const Index = () => {
           {ctaButton}
 
           {/* Garantia */}
-          <div className="bg-accent/5 border border-accent/20 rounded-xl p-8 flex flex-col items-center gap-4 max-w-xl mx-auto mt-12">
+          <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-8 flex flex-col items-center gap-4 max-w-xl mx-auto mt-12">
             <Shield className="w-10 h-10 text-accent" />
-            <p className="font-display text-2xl font-bold text-foreground">
+            <p className="font-display text-2xl font-bold text-primary-foreground">
               Garantia de resultado
             </p>
-            <p className="text-muted-foreground text-base leading-relaxed">
+            <p className="text-primary-foreground/70 text-base leading-relaxed">
               Se ao final da imersão você não sair com sua decisão sobre o próximo movimento e com um plano estruturado para os próximos 30 dias, eu devolvo 100% do seu investimento.
             </p>
-            <p className="text-foreground font-bold text-lg">
+            <p className="text-primary-foreground font-bold text-lg">
               Sem burocracia.
             </p>
           </div>
@@ -409,16 +409,16 @@ const Index = () => {
             href="https://www.amigosdobem.org"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 bg-accent/5 border border-accent/20 rounded-xl p-5 max-w-xl mx-auto mt-8 hover:bg-accent/10 transition-colors"
+            className="flex items-center gap-4 bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-5 max-w-xl mx-auto mt-8 hover:bg-primary-foreground/15 transition-colors"
           >
             <img
               src="/images/amigos-do-bem-icon.png"
               alt="ONG Amigos do Bem"
               className="w-14 h-14 object-contain shrink-0"
             />
-            <p className="text-muted-foreground text-sm text-left">
+            <p className="text-primary-foreground/70 text-sm text-left">
               Parte das vendas desta imersão é direcionada para a ONG{" "}
-              <strong className="text-foreground">Amigos do Bem</strong>.
+              <strong className="text-primary-foreground">Amigos do Bem</strong>.
             </p>
           </a>
         </div>
