@@ -97,7 +97,7 @@ const Index = () => {
                 <span className="text-warm">Precisa decidir o seu próximo movimento.</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed mb-3 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
-                Uma imersão estratégica para executivas que não podem mais adiar uma decisão de carreira.
+                Uma imersão estratégica para quem não pode mais adiar uma decisão de carreira.
               </p>
               <p className="text-sm sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0 px-2 sm:px-0">
                 Clareza, direção e um plano estruturado para os próximos 30 dias.
@@ -342,7 +342,7 @@ const Index = () => {
                   Passou por gerência, diretoria e C-Level internacional para América Latina e América Central, liderando projetos globais e equipes em 15 países simultaneamente.
                 </p>
                 <p>
-                  Em 2021, fez o que muitas executivas pensam mas não executam:{" "}
+                  Em 2021, fez o que muitos executivos pensam mas não executam:{" "}
                   <strong className="text-primary-foreground">parou. Intencionalmente.</strong>{" "}
                   Para decidir o próximo movimento com método — não com impulso.
                 </p>
@@ -351,7 +351,7 @@ const Index = () => {
                 </p>
                  <p className="font-bold text-primary-foreground">
                   Quem conduz essa imersão não fala de carreira de fora.
-                  Ela tomou essas decisões de dentro.
+                  Tomou essas decisões de dentro.
                 </p>
               </div>
             </div>
@@ -420,8 +420,8 @@ const Index = () => {
             </p>
             <p>
               Você continua entregando bem,
-              <br />continua sendo reconhecida,
-              <br />continua ocupada…
+              <br />continua sendo reconhecido,
+              <br />continua ocupado…
             </p>
             <p className="text-foreground font-semibold">
               Mas sem perceber, começa a repetir o mesmo ciclo:
@@ -575,10 +575,10 @@ const Index = () => {
           </h2>
           <div className="space-y-3">
             <FAQItem
-              question="Transição de carreira é só para quem está desempregada?"
+              question="Transição de carreira é só para quem está desempregado?"
               answer={<>
                 <p>Não. Transição não começa quando você sai de uma empresa. Começa quando você percebe que continuar como está já não é suficiente.</p>
-                <p>A maioria das executivas que participam de O Próximo Passo não está desempregada — está no ponto em que precisa decidir com mais critério.</p>
+                <p>A maioria dos executivos que participam de O Próximo Passo não está desempregado — está no ponto em que precisa decidir com mais critério.</p>
                 <p className="font-semibold text-foreground">E adiar essa decisão costuma custar mais do que parece.</p>
               </>}
             />
@@ -592,7 +592,7 @@ const Index = () => {
             <FAQItem
               question="Funciona para quem já está bem na carreira?"
               answer={<>
-                <p>Sim. A maioria das participantes já tem uma carreira estruturada.</p>
+                <p>Sim. A maioria dos participantes já tem uma carreira estruturada.</p>
                 <p className="font-semibold text-foreground">O ponto não é "dar certo" — é garantir que o próximo movimento seja feito com critério.</p>
               </>}
             />
