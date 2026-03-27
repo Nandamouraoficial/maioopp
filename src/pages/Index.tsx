@@ -349,9 +349,9 @@ const Index = () => {
               { icon: Monitor, label: "Online e ao vivo" },
               { icon: Users, label: "Grupo fechado — até 15 vagas" },
             ].map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center gap-3 bg-card border border-border rounded-xl p-4">
+              <div key={label} className="flex items-center gap-3 bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-4">
                 <Icon className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-foreground text-sm font-medium">{label}</span>
+                <span className="text-primary-foreground text-sm font-medium">{label}</span>
               </div>
             ))}
           </div>
