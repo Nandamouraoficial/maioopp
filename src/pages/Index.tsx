@@ -342,7 +342,7 @@ const Index = () => {
                   Passou por gerência, diretoria e C-Level internacional para América Latina e América Central, liderando projetos globais e equipes em 15 países simultaneamente.
                 </p>
                 <p>
-                  Em 2021, fez o que muitas executivas pensam mas não executam:{" "}
+                  Em 2021, fez o que muitos executivos pensam mas não executam:{" "}
                   <strong className="text-primary-foreground">parou. Intencionalmente.</strong>{" "}
                   Para decidir o próximo movimento com método — não com impulso.
                 </p>
