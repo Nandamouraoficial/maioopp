@@ -414,7 +414,7 @@ const Index = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
             Se você não decidir agora
           </h2>
-          <div className="text-lg md:text-xl leading-loose text-muted-foreground space-y-8">
+          <div className="text-xl md:text-2xl leading-loose text-muted-foreground space-y-8">
             <p>
               A maioria das carreiras não trava por falta de capacidade.
               <br />
