@@ -116,9 +116,12 @@ const Index = () => {
       {/* ═══════════ 2. PARA QUEM É ═══════════ */}
       <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-6">
             Para quem é essa imersão
           </h2>
+          <p className="text-primary-foreground/80 text-lg text-center mb-12 max-w-2xl mx-auto">
+            Você não está em crise — mas sabe que precisa decidir melhor o próximo movimento.
+          </p>
           <ul className="space-y-4 max-w-xl mx-auto mb-10">
             {[
               "Você ocupa uma posição de liderança ou influência há anos",
