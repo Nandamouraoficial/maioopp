@@ -351,7 +351,7 @@ const Index = () => {
                 </p>
                  <p className="font-bold text-primary-foreground">
                   Quem conduz essa imersão não fala de carreira de fora.
-355:                   Tomou essas decisões de dentro.
+                  Tomou essas decisões de dentro.
                 </p>
               </div>
             </div>
