@@ -453,28 +453,70 @@ const Index = () => {
           </h2>
           <div className="space-y-3">
             <FAQItem
+              question="Transição de carreira é só para quem está desempregada ou saindo da empresa?"
+              answer={<>
+                <p>Não. Transição não começa quando você sai de uma empresa. Começa quando você percebe que continuar como está já não é suficiente.</p>
+                <p>A maioria das executivas que participam não está desempregada — está exatamente no ponto em que precisa decidir o próximo movimento com mais critério.</p>
+                <p>Você não precisa estar em crise para participar. Mas, se já percebeu que precisa evoluir e ainda não estruturou como, você já está em transição.</p>
+                <p className="font-semibold text-foreground">E adiar essa decisão costuma custar mais do que parece.</p>
+              </>}
+            />
+            <FAQItem
               question="Preciso estar em transição de carreira para participar?"
-              answer="Não. A imersão é para qualquer profissional sênior que queira estruturar o próximo movimento com mais critério — esteja planejando uma mudança ou querendo crescer de forma mais intencional onde está."
+              answer={<>
+                <p>Não no sentido tradicional. Você não precisa estar saindo de uma empresa ou disponível no mercado.</p>
+                <p>Mas precisa estar em um momento em que continuar como está já não é suficiente — e o próximo passo ainda não está claro.</p>
+                <p className="font-semibold text-foreground">Esse é exatamente o ponto em que a imersão mais gera valor.</p>
+              </>}
             />
             <FAQItem
               question="A imersão é individual ou em grupo?"
-              answer="É em grupo — mas um grupo reduzido de até 15 participantes, o que garante profundidade e espaço para cada situação individual ser trabalhada."
+              answer={<>
+                <p>É em grupo, com até 15 executivas. O grupo é intencionalmente reduzido para garantir profundidade, troca qualificada e decisões com contexto real — não genéricas.</p>
+                <p className="font-semibold text-foreground">Não é uma sessão aberta. É um ambiente estratégico.</p>
+              </>}
             />
             <FAQItem
               question="Como funciona a garantia?"
-              answer="Se ao final da imersão você não sair com uma decisão clara sobre o próximo movimento e um plano para os próximos 30 dias, devolvemos 100% do valor investido. Sem burocracia."
+              answer={<>
+                <p>Se ao final da imersão você não sair com uma decisão clara sobre o seu próximo movimento e um plano estruturado para os próximos 30 dias, você pode solicitar 100% do valor investido de volta.</p>
+                <p className="font-semibold text-foreground">Sem burocracia.</p>
+              </>}
             />
             <FAQItem
               question="Qual é o formato?"
-              answer="Online e ao vivo, das 9h às 15h (horário de Brasília). Não é aula gravada. É um dia de trabalho estratégico, conduzido em tempo real pela Fernanda Moura."
+              answer={<>
+                <p>Um encontro online, ao vivo, com duração de 6 horas.</p>
+                <p>Estruturado em etapas que levam você de um cenário indefinido a uma decisão concreta — com aplicação direta no seu contexto.</p>
+              </>}
             />
             <FAQItem
               question="Preciso me preparar de alguma forma?"
-              answer="Sim. Após a inscrição, você receberá um material pré-imersão com perguntas estratégicas para que o trabalho no dia seja ainda mais produtivo."
+              answer={<>
+                <p>Não. Você chega com o seu momento atual — e isso é suficiente.</p>
+                <p>A imersão foi desenhada para organizar o que hoje está disperso e transformar em decisão estruturada.</p>
+              </>}
             />
             <FAQItem
               question="E se eu não puder participar no dia?"
-              answer="Como o grupo é fechado e a experiência é ao vivo, não oferecemos gravação. Se precisar remarcar, entre em contato e avaliaremos a possibilidade de participação na próxima edição."
+              answer={<>
+                <p>Por ser uma imersão ao vivo, com dinâmica construída em tempo real, não há gravação.</p>
+                <p>Caso não possa participar, sua vaga pode ser transferida para uma próxima edição (mediante aviso prévio).</p>
+              </>}
+            />
+            <FAQItem
+              question="Isso funciona para quem já está bem na carreira?"
+              answer={<>
+                <p>Sim. A maioria das participantes já tem uma carreira estruturada.</p>
+                <p className="font-semibold text-foreground">O ponto não é "dar certo" — é garantir que o próximo movimento seja feito com critério, e não no automático.</p>
+              </>}
+            />
+            <FAQItem
+              question="O que acontece depois da imersão?"
+              answer={<>
+                <p>Você sai com uma decisão tomada e um plano claro para os próximos 30 dias.</p>
+                <p>Para quem quiser aprofundar, existe a possibilidade de continuidade em mentoria — mas a imersão, por si só, já entrega um avanço concreto.</p>
+              </>}
             />
           </div>
         </div>
