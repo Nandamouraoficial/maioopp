@@ -77,7 +77,7 @@ const Index = () => {
   );
 
   return (
-    <main className="min-h-screen bg-background text-foreground font-body">
+    <main className="min-h-screen bg-background text-foreground font-body scroll-smooth">
       
 
       {/* ═══════════ 1. HERO ═══════════ */}
