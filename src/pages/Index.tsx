@@ -378,10 +378,10 @@ const Index = () => {
           </div>
 
           <div className="max-w-xl mx-auto mb-8">
-            <p className="text-muted-foreground text-base">
+            <p className="text-primary-foreground/70 text-base">
               O grupo é reduzido para garantir qualidade nas discussões e profundidade na condução.
             </p>
-            <p className="text-foreground font-bold text-base mt-2">
+            <p className="text-primary-foreground font-bold text-base mt-2">
               Por isso, as vagas são limitadas.
             </p>
           </div>
