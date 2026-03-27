@@ -77,7 +77,7 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="flex-1 text-foreground text-center lg:text-left">
               <p className="text-accent text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
-              <h1 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-8">
+              <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-8">
                 Você não precisa de mais informação.
                 <br />
                 <span className="text-accent">Precisa decidir o seu próximo movimento.</span>
