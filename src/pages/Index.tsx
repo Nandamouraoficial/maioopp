@@ -80,7 +80,7 @@ const Index = () => {
 
               <div className="flex flex-col items-center lg:items-start gap-3">
                 <span className="inline-block text-xs uppercase tracking-wider font-bold text-accent border border-accent/30 bg-accent/5 rounded-full px-4 py-1.5">
-                  Grupo fechado para até 15 executivas
+                  Grupo fechado para até 15 executivos
                 </span>
                 {ctaButton}
               </div>
