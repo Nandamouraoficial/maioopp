@@ -575,6 +575,7 @@ const Index = () => {
           </h2>
           <div className="space-y-3">
             <FAQItem
+              defaultOpen
               question="Transição de carreira é só para quem está desempregado?"
               answer={<>
                 <p>Não. Transição não começa quando você sai de uma empresa. Começa quando você percebe que continuar como está já não é suficiente.</p>
