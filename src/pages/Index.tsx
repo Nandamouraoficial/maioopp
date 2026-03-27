@@ -391,15 +391,15 @@ const Index = () => {
           {ctaButton}
 
           {/* Garantia */}
-          <div className="bg-accent/5 border border-accent/20 rounded-xl p-8 flex flex-col items-center gap-4 max-w-xl mx-auto mt-12">
+          <div className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-xl p-8 flex flex-col items-center gap-4 max-w-xl mx-auto mt-12">
             <Shield className="w-10 h-10 text-accent" />
-            <p className="font-display text-2xl font-bold text-foreground">
+            <p className="font-display text-2xl font-bold text-primary-foreground">
               Garantia de resultado
             </p>
-            <p className="text-muted-foreground text-base leading-relaxed">
+            <p className="text-primary-foreground/70 text-base leading-relaxed">
               Se ao final da imersão você não sair com sua decisão sobre o próximo movimento e com um plano estruturado para os próximos 30 dias, eu devolvo 100% do seu investimento.
             </p>
-            <p className="text-foreground font-bold text-lg">
+            <p className="text-primary-foreground font-bold text-lg">
               Sem burocracia.
             </p>
           </div>
