@@ -360,12 +360,12 @@ const Index = () => {
             Investimento
           </h3>
 
-          <div className="bg-card rounded-xl p-6 mb-8 max-w-xl mx-auto text-left">
-            <p className="text-muted-foreground text-base leading-relaxed">
+          <div className="bg-primary-foreground/10 rounded-xl p-6 mb-8 max-w-xl mx-auto text-left">
+            <p className="text-primary-foreground/70 text-base leading-relaxed">
               Uma sessão individual com uma ex-diretora executiva C-level custa entre{" "}
-              <strong className="text-foreground">R$ 3.000 e R$ 10.000</strong>.
+              <strong className="text-primary-foreground">R$ 3.000 e R$ 10.000</strong>.
             </p>
-            <p className="text-muted-foreground text-base leading-relaxed mt-4">
+            <p className="text-primary-foreground/70 text-base leading-relaxed mt-4">
               Nesta imersão, você participa de um dia inteiro de trabalho estratégico, com profundidade real e aplicação direta no seu contexto, por:
             </p>
           </div>
