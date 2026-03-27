@@ -27,7 +27,7 @@ const FAQItem = ({ question, answer, defaultOpen = false }: { question: string; 
       <div className={`grid transition-all duration-300 ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
         <div className="overflow-hidden">
           <div className="px-5 pb-5 pt-0">
-            <div className="text-muted-foreground text-base leading-relaxed space-y-3">{answer}</div>
+            <div className="text-muted-foreground text-base md:text-lg leading-relaxed space-y-3">{answer}</div>
           </div>
         </div>
       </div>
