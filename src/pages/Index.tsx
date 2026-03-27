@@ -367,6 +367,14 @@ const Index = () => {
             ))}
           </div>
 
+          <div className="bg-primary-foreground/5 border border-primary-foreground/15 rounded-xl p-6 max-w-xl mx-auto mb-10">
+            <p className="text-primary-foreground text-lg leading-relaxed">
+              Adiar essa decisão parece seguro.
+              <br />
+              <strong className="text-accent">Mas, em carreiras seniores, costuma ser caro.</strong>
+            </p>
+          </div>
+
           <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-6">
             Investimento
           </h3>
