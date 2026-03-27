@@ -295,15 +295,15 @@ const Index = () => {
       <Divider />
 
       {/* ═══════════ 7. DEPOIMENTOS ═══════════ */}
-      <section className="relative bg-accent py-16 md:py-24">
+      <section className="relative bg-background py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-accent-foreground text-center mb-10">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-10">
             Quem já passou pela consultoria estratégica
           </h2>
 
           <div className="space-y-8">
             {/* Carla */}
-            <div className="bg-accent-foreground/10 border border-accent-foreground/20 rounded-2xl p-8 md:p-10 relative">
+            <div className="bg-accent border border-accent/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-accent-foreground/30 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
                 <p className="text-lg text-accent-foreground/80 leading-relaxed">
@@ -317,7 +317,7 @@ const Index = () => {
             </div>
 
             {/* Juliana */}
-            <div className="bg-accent-foreground/10 border border-accent-foreground/20 rounded-2xl p-8 md:p-10 relative">
+            <div className="bg-accent border border-accent/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-accent-foreground/30 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
                 <p className="text-lg text-accent-foreground/80 leading-relaxed">
@@ -484,8 +484,8 @@ const Index = () => {
       </section>
 
       {/* RODAPÉ */}
-      <footer className="py-10 bg-accent">
-        <div className="container mx-auto px-4 sm:px-6 text-center text-accent-foreground">
+      <footer className="py-10" style={{ background: "var(--hero-gradient)" }}>
+        <div className="container mx-auto px-4 sm:px-6 text-center text-foreground">
           <p className="font-display text-lg font-bold">Fernanda Moura</p>
           <p className="text-sm opacity-70 mt-1">Estrategista Executiva de Carreira</p>
           <p className="text-xs opacity-50 mt-4">© 2026 O Próximo Passo</p>
