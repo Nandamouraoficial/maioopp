@@ -420,8 +420,8 @@ const Index = () => {
             </p>
             <p>
               Você continua entregando bem,
-              <br />continua sendo reconhecida,
-              <br />continua ocupada…
+              <br />continua sendo reconhecido,
+              <br />continua ocupado…
             </p>
             <p className="text-foreground font-semibold">
               Mas sem perceber, começa a repetir o mesmo ciclo:
