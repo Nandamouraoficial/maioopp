@@ -137,33 +137,38 @@ const Index = () => {
           <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground text-center mb-12">
             O que acontece quando essa decisão é feita com método
           </h2>
-          <div className="space-y-8">
-            {[
-              {
-                quote: "Saí com mais clareza sobre o que eu quero — e, principalmente, sobre o que eu não quero mais repetir.",
-                name: "Carla Negrão",
-                role: "Executiva de Assuntos Regulatórios (SRA)",
-              },
-              {
-                quote: "Foi a primeira vez que eu consegui parar e estruturar meu pensamento sobre carreira com método.",
-                name: "Juliana",
-                role: "",
-              },
-              {
-                quote: "Saí com um direcionamento claro, sem aquela sensação constante de dúvida.",
-                name: "Participante da imersão",
-                role: "",
-              },
-            ].map((t) => (
-              <blockquote key={t.name} className="text-center">
-                <p className="text-base md:text-lg italic text-foreground/85 leading-relaxed mb-3">
-                  "{t.quote}"
-                </p>
-                <footer className="text-sm text-muted-foreground">
-                  — {t.name}{t.role && <span className="text-warm"> · {t.role}</span>}
-                </footer>
-              </blockquote>
-            ))}
+          <div className="space-y-12">
+            <blockquote className="text-center">
+              <p className="text-lg md:text-xl font-medium text-foreground leading-relaxed mb-3">
+                "Minha carreira estava indo bem — resultados, reconhecimento, tudo certo por fora.
+                Mas eu não tinha clareza sobre o próximo passo."
+              </p>
+              <p className="text-base md:text-lg italic text-foreground/85 leading-relaxed mb-3">
+                "A Fernanda não me disse o que fazer.
+                Ela estruturou comigo os caminhos e colocou as decisões na mesa."
+              </p>
+              <p className="text-base md:text-lg italic text-foreground/85 leading-relaxed mb-3">
+                "Foi a primeira vez que tratei minha carreira como uma decisão estratégica — não como um problema emocional."
+              </p>
+              <p className="text-base md:text-lg italic text-foreground/85 leading-relaxed mb-4">
+                "Saí com direção. E com um plano claro para executar."
+              </p>
+              <footer className="text-sm text-muted-foreground">
+                — Carla Negrão <span className="text-warm">· Executiva de Assuntos Regulatórios (SRA)</span>
+              </footer>
+            </blockquote>
+
+            <blockquote className="text-center">
+              <p className="text-lg md:text-xl font-medium text-foreground leading-relaxed mb-3">
+                "Eu já tinha resultado. O que faltava era clareza sobre o próximo passo."
+              </p>
+              <p className="text-base md:text-lg italic text-foreground/85 leading-relaxed mb-4">
+                "Saí com um direcionamento estruturado — e com segurança para me posicionar além da minha área técnica."
+              </p>
+              <footer className="text-sm text-muted-foreground">
+                — Juliana Zobaran <span className="text-warm">· Diretora LATAM</span>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </section>
