@@ -324,9 +324,9 @@ const Index = () => {
                   "Eu já era Diretora de Impostos para a América Latina. Resultado não faltava. O que faltava era clareza sobre o próximo passo — e a segurança para me posicionar além da área técnica. A Fernanda montou comigo uma estratégia que eu não conseguia enxergar sozinha. Ganhei estrutura na comunicação, presença nos fóruns que importam e passei a atrair as oportunidades certas em vez de esperar por elas. Não precisei mudar de empresa. Mudei de posicionamento."
                 </p>
               </div>
-              <div className="mt-6 pt-6 border-t border-border">
-                <p className="font-bold text-foreground">Juliana Zobaran</p>
-                <p className="text-muted-foreground text-sm">Diretora de Impostos para América Latina · Vantiva</p>
+              <div className="mt-6 pt-6 border-t border-accent-foreground/20">
+                <p className="font-bold text-accent-foreground">Juliana Zobaran</p>
+                <p className="text-accent-foreground/60 text-sm">Diretora de Impostos para América Latina · Vantiva</p>
               </div>
             </div>
           </div>
