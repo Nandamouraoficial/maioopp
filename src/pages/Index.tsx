@@ -575,10 +575,10 @@ const Index = () => {
           </h2>
           <div className="space-y-3">
             <FAQItem
-              question="Transição de carreira é só para quem está desempregada?"
+              question="Transição de carreira é só para quem está desempregado?"
               answer={<>
                 <p>Não. Transição não começa quando você sai de uma empresa. Começa quando você percebe que continuar como está já não é suficiente.</p>
-                <p>A maioria das executivas que participam de O Próximo Passo não está desempregada — está no ponto em que precisa decidir com mais critério.</p>
+                <p>A maioria dos executivos que participam de O Próximo Passo não está desempregado — está no ponto em que precisa decidir com mais critério.</p>
                 <p className="font-semibold text-foreground">E adiar essa decisão costuma custar mais do que parece.</p>
               </>}
             />
