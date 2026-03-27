@@ -285,7 +285,7 @@ const Index = () => {
             <br />
             É excesso de caminho sem critério.
           </h2>
-          <div className="text-lg md:text-xl leading-relaxed text-muted-foreground space-y-6 max-w-2xl mx-auto">
+          <div className="text-xl md:text-2xl leading-relaxed text-muted-foreground space-y-6 max-w-2xl mx-auto">
             <p>
               Você pode continuar estudando.
               <br />Pode fazer mais um curso.
