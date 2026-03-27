@@ -21,7 +21,7 @@ const FAQItem = ({ question, answer, defaultOpen = false }: { question: string; 
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between p-5 text-left hover:bg-muted/30 transition-colors"
       >
-        <span className="text-foreground font-bold text-base pr-4">{question}</span>
+        <span className="text-foreground font-bold text-lg pr-4">{question}</span>
         <ChevronDown className={`w-5 h-5 text-warm shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
       </button>
       <div className={`grid transition-all duration-300 ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
