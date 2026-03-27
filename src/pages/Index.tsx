@@ -628,7 +628,7 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0" style={{ background: "<div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.3), hsla(var(--background) / 0.65) 50%, hsla(var(--background) / 0.9) 80%, hsl(var(--background)))" }} />" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.3), hsla(var(--background) / 0.65) 50%, hsla(var(--background) / 0.9) 80%, hsl(var(--background)))" }} /> style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.3), hsla(var(--background) / 0.65) 50%, hsla(var(--background) / 0.9) 80%, hsl(var(--background)))" }} />" }} />
         <div className="relative container mx-auto px-4 sm:px-6 max-w-3xl text-center text-foreground flex flex-col justify-end min-h-[320px] sm:min-h-[400px]">
           <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed mb-4">
             Se você já percebeu que deixar a carreira
