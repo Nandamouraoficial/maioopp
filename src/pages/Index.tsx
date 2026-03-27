@@ -527,7 +527,7 @@ const Index = () => {
             </p>
           </div>
 
-          <CountdownTimer />
+          
 
           {ctaButtonFinal}
 
