@@ -304,15 +304,15 @@ const Index = () => {
           <div className="space-y-8">
             {/* Carla */}
             <div className="bg-accent border border-accent/80 rounded-2xl p-8 md:p-10 relative">
-              <Quote className="w-10 h-10 text-accent-foreground/30 absolute top-6 left-6" />
+              <Quote className="w-10 h-10 text-primary/20 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
-                <p className="text-lg text-accent-foreground/80 leading-relaxed">
+                <p className="text-lg text-primary leading-relaxed">
                   "Minha carreira como executiva estava indo bem. Bônus, promoções, resultados e reconhecimento — tudo o que o mercado usa para medir sucesso. Mas por dentro eu estava quebrando, e ninguém via. A Fernanda não me disse o que fazer — ela montou a estratégia junto comigo e colocou as decisões na mesa para eu escolher. Foi a primeira vez que alguém tratou minha carreira com método e como decisão estratégica, não como problema emocional. Resultado: saí da paralisia da executiva bem-sucedida à beira do burnout e abri minha consultoria."
                 </p>
               </div>
-              <div className="mt-6 pt-6 border-t border-accent-foreground/20">
-                <p className="font-bold text-accent-foreground">Carla Negrão</p>
-                <p className="text-accent-foreground/60 text-sm">Ex-executiva de Multinacional | Fundadora, CN Food Consulting</p>
+              <div className="mt-6 pt-6 border-t border-primary/20">
+                <p className="font-bold text-primary">Carla Negrão</p>
+                <p className="text-primary/70 text-sm">Ex-executiva de Multinacional | Fundadora, CN Food Consulting</p>
               </div>
             </div>
 
