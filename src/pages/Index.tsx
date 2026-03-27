@@ -116,7 +116,7 @@ const Index = () => {
               "Você ocupa uma posição de liderança ou influência há anos",
               "Sabe que precisa tomar uma decisão sobre carreira, mas não quer agir por impulso",
               "Já investiu em cursos e mentorias que não mudaram o que realmente importa",
-              "Quer estruturar os próximos 5 a 10 anos com critério — não por reação ao mercado",
+              "Quer estruturar os próximos 1 a 3 anos com critério — não por reação ao mercado",
               "Precisa de um espaço estratégico, não motivacional, para pensar o próximo movimento",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-lg text-foreground">
