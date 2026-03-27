@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check, Calendar, Clock, Monitor, Users, Shield, Quote, ChevronDown } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
-import SealBadge from "@/components/SealBadge";
+
 import { useState } from "react";
 
 const CTA_URL = "https://pay.kiwify.com.br/VrHaDPn";
@@ -55,7 +55,7 @@ const Index = () => {
 
   return (
     <main className="min-h-screen bg-background text-foreground font-body">
-      <SealBadge />
+      
 
       {/* ═══════════ 1. HERO ═══════════ */}
       <section
@@ -72,7 +72,7 @@ const Index = () => {
                 <span className="text-accent">O próximo passo exige direção.</span>
               </h1>
               <p className="text-lg md:text-xl font-light leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
-                Um dia inteiro de trabalho estratégico para executivas e profissionais seniores que precisam decidir o próximo movimento de carreira — com método, não com impulso.
+                Um dia inteiro de trabalho estratégico para executivos e profissionais seniores que precisam decidir o próximo movimento de carreira — com método, não com impulso.
               </p>
               <p className="text-base font-semibold mb-10 max-w-lg mx-auto lg:mx-0">
                 Não é aula. Não é palestra. É a imersão onde você sai com uma decisão tomada e um plano para os próximos 30 dias.
