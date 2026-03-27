@@ -262,7 +262,7 @@ const Index = () => {
               />
             </div>
             <div className="flex-1 text-center lg:text-left">
-              <h3 className="font-display text-2xl font-bold text-foreground mb-1">
+              <h3 className="font-display text-2xl font-bold text-primary-foreground mb-1">
                 Fernanda Moura
               </h3>
               <p className="text-accent font-bold mb-6">
