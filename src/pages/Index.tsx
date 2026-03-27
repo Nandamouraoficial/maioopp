@@ -656,7 +656,7 @@ const Index = () => {
         <a onClick={handleCTAClick} className="cursor-pointer block">
           <Button
             size="lg"
-            className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-base px-6 py-6 rounded-lg shadow-lg tracking-wide w-full"
+            className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-base px-4 py-5 rounded-lg shadow-lg tracking-wide w-full"
           >
             QUERO DECIDIR MEU PRÓXIMO MOVIMENTO
           </Button>
