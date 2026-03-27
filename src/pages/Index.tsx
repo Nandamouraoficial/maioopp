@@ -134,7 +134,7 @@ const Index = () => {
       {/* ═══════════ MINI PROVA SOCIAL ═══════════ */}
       <section className="bg-background py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground text-center mb-12">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
             O que acontece quando essa decisão é feita com método
           </h2>
           <div className="space-y-12">
