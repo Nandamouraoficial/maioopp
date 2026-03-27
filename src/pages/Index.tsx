@@ -317,7 +317,7 @@ const Index = () => {
             </div>
 
             {/* Juliana */}
-            <div className="bg-accent-foreground/10 border border-accent-foreground/20 rounded-2xl p-8 md:p-10 relative">
+            <div className="bg-accent border border-accent/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-accent-foreground/30 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
                 <p className="text-lg text-accent-foreground/80 leading-relaxed">
