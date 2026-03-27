@@ -1,24 +1,20 @@
 
 
-## Plano: Aplicar cor caramelo/dourada como fundo em seções da página
+## Plano: Melhorar contraste nos depoimentos + cor caramelo nos boxes da imersão
 
-### Cor identificada
-A cor da imagem corresponde ao `--accent` atual (`hsl(33, 42%, 54%)`) — o caramelo dourado.
+### 1. Depoimentos — melhorar contraste (linhas 306-331)
+- Trocar texto dos depoimentos de `text-accent-foreground/80` para `text-primary` (marrom escuro) — muito mais legível sobre fundo caramelo
+- Nome: de `text-accent-foreground` para `text-primary font-bold`
+- Cargo: de `text-accent-foreground/60` para `text-primary/70`
+- Ícone aspas: de `text-accent-foreground/30` para `text-primary/20`
+- Borda divisória: de `border-accent-foreground/20` para `border-primary/20`
 
-### Onde aplicar
-
-**1. Seção de Depoimentos (seção 7, linha ~298)**
-- Fundo da seção: de `bg-background` para `bg-accent`
-- Textos: `text-accent-foreground` (claro) para contraste
-- Cards dos depoimentos: `bg-accent-foreground/10` com `border-accent-foreground/20`
-- Textos dentro dos cards ajustados para legibilidade sobre fundo dourado
-
-**2. Seção Hero (topo) ou rodapé — mais um local com essa cor**
-Opção sugerida: aplicar no **rodapé/seção final de CTA** (última seção, após FAQ) como fundo `bg-accent`, criando um fechamento visual forte com a mesma cor.
+### 2. Boxes "O que acontece em 6 horas" — aplicar caramelo (linhas 157-163)
+- Trocar `bg-card` por `bg-accent` nos 4 cards (1, 2, 3, 4)
+- Número: manter `text-accent` → trocar para `text-primary-foreground` ou `text-white`
+- Texto: de `text-foreground` para `text-primary` (escuro, legível sobre caramelo)
+- Borda: de `border-border` para `border-accent/80`
 
 ### Arquivo editado
-- `src/pages/Index.tsx` — classes de cor nas seções de depoimentos e rodapé
-
-### Resultado
-Alternância visual: creme → marrom escuro → creme → **caramelo dourado** (depoimentos) → creme → marrom escuro → creme → **caramelo dourado** (rodapé)
+- `src/pages/Index.tsx`
 
