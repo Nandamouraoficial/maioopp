@@ -40,6 +40,9 @@ const Index = () => {
     if (typeof window !== "undefined" && (window as any).lintrk) {
       (window as any).lintrk("track", { conversion_id: 26913521 });
     }
+    if (typeof window !== "undefined" && (window as any).fbq) {
+      (window as any).fbq('track', 'InitiateCheckout');
+    }
     window.open(CTA_URL, "_blank");
   };
 
