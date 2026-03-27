@@ -156,7 +156,7 @@ const Index = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="border border-accent/80 rounded-xl p-6 text-left hover:shadow-md transition-shadow bg-accent"
+                className="border border-warm/80 rounded-xl p-6 text-left hover:shadow-md transition-shadow bg-warm"
               >
                 <span className="text-primary-foreground font-display text-2xl font-bold">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-primary text-lg mt-3">{item}</p>
@@ -303,7 +303,7 @@ const Index = () => {
 
           <div className="space-y-8">
             {/* Carla */}
-            <div className="bg-accent border border-accent/80 rounded-2xl p-8 md:p-10 relative">
+            <div className="bg-warm border border-warm/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
                 <p className="text-lg text-primary leading-relaxed">
@@ -317,7 +317,7 @@ const Index = () => {
             </div>
 
             {/* Juliana */}
-            <div className="bg-accent border border-accent/80 rounded-2xl p-8 md:p-10 relative">
+            <div className="bg-warm border border-warm/80 rounded-2xl p-8 md:p-10 relative">
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 left-6" />
               <div className="pt-8 space-y-4">
                 <p className="text-lg text-primary leading-relaxed">

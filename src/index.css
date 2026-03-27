@@ -36,6 +36,9 @@
 
     --radius: 0.5rem;
 
+    --warm: 22 40% 68%;
+    --warm-foreground: 12 40% 20%;
+
     /* Custom tokens */
     --hero-gradient: linear-gradient(135deg, hsl(40 38% 88%), hsl(40 35% 91%), hsl(40 40% 90%));
     --cta-hover: 12 40% 22%;
