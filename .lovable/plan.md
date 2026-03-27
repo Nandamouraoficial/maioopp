@@ -1,27 +1,23 @@
 
 
-## Plano: Substituir cor accent por warm em toda a página
+## Plano: Atualizar bloco de mini prova social
 
-A cor `accent` (caramelo/dourado antigo) ainda aparece em ~30+ ocorrências no `Index.tsx`. Precisa ser trocada por `warm` (terracota/areia quente) para manter consistência com o título "O Próximo Passo" e os boxes de depoimento.
+### O que muda
 
-### Substituições em `src/pages/Index.tsx`
+No `src/pages/Index.tsx` (linhas 140-166), substituir os 3 depoimentos curtos atuais por 2 depoimentos expandidos:
 
-Trocar **todas** as ocorrências de:
-- `text-accent` → `text-warm`
-- `bg-accent` → `bg-warm`
-- `border-accent` → `border-warm`
+**Depoimento 1 — Carla Negrão** (texto longo, ~4 parágrafos conforme fornecido, com primeira frase em destaque visual — `text-lg font-medium` vs `text-base` no restante)
 
-Isso afeta:
-1. **Divider** — decoração `✦` e linhas
-2. **FAQ chevron** — ícone de seta
-3. **Hero** — badge "Grupo fechado", linha "Precisa decidir...", linha de reforço
-4. **Seções escuras (bg-primary)** — ícones Check, ícone Shield (garantia), bullets do bloco consequência
-5. **Sobre a facilitadora** — cargo "Estrategista Executiva"
-6. **Detalhes práticos** — labels (Data, Horário, etc.)
-7. **Investimento** — frase "Mas, em carreiras seniores..."
-8. **Também no `SealBadge.tsx`** — `border-accent`, `ring-accent`, `text-accent` → `warm`
+**Depoimento 2 — Juliana Zobaran** (texto curto, 2 frases, com primeira frase em destaque)
 
-### Arquivos editados
-- `src/pages/Index.tsx` — substituição global accent → warm
-- `src/components/SealBadge.tsx` — mesma substituição
+### Estilo visual
+- Manter `blockquote` centralizado sem bordas/cards
+- Primeira frase de cada depoimento: `text-lg md:text-xl font-medium` (leve destaque)
+- Restante: `text-base md:text-lg italic` (como está)
+- Nome/cargo: `text-sm text-muted-foreground` (menor contraste, mais sofisticado)
+- Juliana passa a ter sobrenome "Zobaran" e cargo "Diretora LATAM"
+- Aumentar `space-y-8` para `space-y-12` para mais respiro entre depoimentos
+
+### Arquivo editado
+- `src/pages/Index.tsx` — linhas 140-166
 
