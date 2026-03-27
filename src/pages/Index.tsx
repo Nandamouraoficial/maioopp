@@ -156,7 +156,7 @@ const Index = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="border border-accent/80 rounded-xl p-6 text-left hover:shadow-md transition-shadow bg-accent"
+                className="border border-warm/80 rounded-xl p-6 text-left hover:shadow-md transition-shadow bg-warm"
               >
                 <span className="text-primary-foreground font-display text-2xl font-bold">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-primary text-lg mt-3">{item}</p>
