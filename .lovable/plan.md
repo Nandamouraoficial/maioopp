@@ -1,22 +1,24 @@
 
 
-## Plano: Reordenar fotos e garantir fundo creme/cappuccino
+## Plano: Aplicar cor caramelo/dourada como fundo em seções da página
 
-### 1. Reordenar as 3 imagens
+### Cor identificada
+A cor da imagem corresponde ao `--accent` atual (`hsl(33, 42%, 54%)`) — o caramelo dourado.
 
-| Seção | Atual | Nova |
-|---|---|---|
-| Hero (topo) | `foto_terno.jpeg` | `final-equipe.png` |
-| Sobre/Bio | `sobre-poltrona.png` | `foto_terno.jpeg` |
-| Final | `final-equipe.png` | `sobre-poltrona.png` |
+### Onde aplicar
 
-**Arquivo:** `src/pages/Index.tsx` — trocar os `src` das 3 tags `<img>` nas linhas ~98, ~258 e ~467.
+**1. Seção de Depoimentos (seção 7, linha ~298)**
+- Fundo da seção: de `bg-background` para `bg-accent`
+- Textos: `text-accent-foreground` (claro) para contraste
+- Cards dos depoimentos: `bg-accent-foreground/10` com `border-accent-foreground/20`
+- Textos dentro dos cards ajustados para legibilidade sobre fundo dourado
 
-### 2. Confirmar fundo creme/cappuccino
+**2. Seção Hero (topo) ou rodapé — mais um local com essa cor**
+Opção sugerida: aplicar no **rodapé/seção final de CTA** (última seção, após FAQ) como fundo `bg-accent`, criando um fechamento visual forte com a mesma cor.
 
-O CSS (`src/index.css`) já possui `--background: 30 25% 90%` (creme claro). Se a mudança não está aparecendo no preview, pode ser cache. Vou garantir que o valor está correto e, se necessário, ajustar a luminosidade para um tom mais quente/caramelo (ex: `30 30% 88%`).
+### Arquivo editado
+- `src/pages/Index.tsx` — classes de cor nas seções de depoimentos e rodapé
 
-### Arquivos editados
-- `src/pages/Index.tsx` — reordenar imagens
-- `src/index.css` — confirmar/ajustar tom do background
+### Resultado
+Alternância visual: creme → marrom escuro → creme → **caramelo dourado** (depoimentos) → creme → marrom escuro → creme → **caramelo dourado** (rodapé)
 
