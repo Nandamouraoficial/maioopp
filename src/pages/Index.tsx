@@ -3,7 +3,7 @@ import { Check, Calendar, Clock, Monitor, Users, Shield, Quote, ChevronDown } fr
 
 import { useState, useEffect } from "react";
 
-const CTA_URL = "https://pay.kiwify.com.br/VrHaDPn";
+const CTA_URL = "https://pay.kiwify.com.br/X6CZPmQ";
 
 const Divider = () => (
   <div className="flex items-center justify-center py-6">
