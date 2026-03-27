@@ -255,7 +255,7 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-5xl mx-auto">
             <div className="flex-shrink-0">
               <img
-                src="/images/sobre-poltrona.png"
+                src="/images/foto_terno.jpeg"
                 alt="Fernanda Moura — Estrategista Executiva"
                 className="w-72 md:w-80 rounded-2xl shadow-xl object-cover"
                 loading="lazy"
