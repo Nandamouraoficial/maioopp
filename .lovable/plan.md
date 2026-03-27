@@ -1,13 +1,25 @@
 
 
-## Plano: Substituir Meta Pixel
+## Plano: Adicionar evento de conversão do Meta Pixel nos botões de checkout
 
-Trocar o pixel atual (ID `4320288374856933`) pelo novo (ID `362447350174886`) no `index.html`.
+### Alteração em `src/pages/Index.tsx`
 
-### Alterações em `index.html`
+Na função `handleCTAClick` (linha 39-44), adicionar `fbq('track', 'InitiateCheckout')` antes do `window.open`:
 
-1. **Linha 61**: Alterar `fbq('init', '4320288374856933')` para `fbq('init', '362447350174886')`
-2. **Bloco `<noscript>` no `<body>`** (~linha 78): Atualizar a URL da imagem de fallback de `id=4320288374856933` para `id=362447350174886`
+```ts
+const handleCTAClick = () => {
+  if (typeof window !== "undefined" && (window as any).lintrk) {
+    (window as any).lintrk("track", { conversion_id: 26913521 });
+  }
+  if (typeof window !== "undefined" && (window as any).fbq) {
+    (window as any).fbq('track', 'InitiateCheckout');
+  }
+  window.open(CTA_URL, "_blank");
+};
+```
 
-Nenhum outro arquivo precisa ser alterado.
+Isso dispara o evento padrão `InitiateCheckout` do Meta Pixel em todos os botões de CTA da página, já que todos usam essa mesma função.
+
+### Resultado
+Cada clique em botão de checkout será rastreado como evento de conversão no Meta Ads Manager.
 
