@@ -13,22 +13,24 @@ const Divider = () => (
   </div>
 );
 
-const FAQItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => {
-  const [open, setOpen] = useState(false);
+const FAQItem = ({ question, answer, defaultOpen = false }: { question: string; answer: React.ReactNode; defaultOpen?: boolean }) => {
+  const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="border border-border rounded-xl overflow-hidden">
+    <div className="border border-border rounded-xl overflow-hidden bg-muted/20">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between p-5 text-left hover:bg-muted/30 transition-colors"
       >
         <span className="text-foreground font-bold text-base pr-4">{question}</span>
-        <ChevronDown className={`w-5 h-5 text-warm shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
+        <ChevronDown className={`w-5 h-5 text-warm shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && (
-        <div className="px-5 pb-5 pt-0">
-          <div className="text-muted-foreground text-base leading-relaxed space-y-3">{answer}</div>
+      <div className={`grid transition-all duration-300 ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+        <div className="overflow-hidden">
+          <div className="px-5 pb-5 pt-0">
+            <div className="text-muted-foreground text-base leading-relaxed space-y-3">{answer}</div>
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
