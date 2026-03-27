@@ -95,7 +95,7 @@ const Index = () => {
 
             <div className="flex-1 flex justify-center lg:justify-end">
               <img
-                src="/images/final-equipe.png"
+                src="/images/sobre-poltrona.png"
                 alt="Fernanda Moura — Estrategista Executiva de Carreira"
                 className="w-full max-w-md lg:max-w-lg max-h-[400px] rounded-2xl shadow-2xl object-cover object-[center_15%]"
                 loading="eager"
@@ -464,7 +464,7 @@ const Index = () => {
       {/* ═══════════ 10. CTA FINAL ═══════════ */}
       <section className="relative overflow-hidden pt-40 sm:pt-48 md:pt-64 pb-12">
         <img
-          src="/images/sobre-poltrona.png"
+          src="/images/final-equipe.png"
           alt="Fernanda Moura"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
