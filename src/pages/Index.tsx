@@ -14,7 +14,7 @@ const Divider = () => (
   </div>
 );
 
-const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
+const FAQItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className="border border-border rounded-xl overflow-hidden">
@@ -27,7 +27,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
       </button>
       {open && (
         <div className="px-5 pb-5 pt-0">
-          <p className="text-muted-foreground text-base leading-relaxed">{answer}</p>
+          <div className="text-muted-foreground text-base leading-relaxed space-y-3">{answer}</div>
         </div>
       )}
     </div>
