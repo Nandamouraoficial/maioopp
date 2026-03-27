@@ -592,7 +592,7 @@ const Index = () => {
             <FAQItem
               question="Funciona para quem já está bem na carreira?"
               answer={<>
-                <p>Sim. A maioria das participantes já tem uma carreira estruturada.</p>
+                <p>Sim. A maioria dos participantes já tem uma carreira estruturada.</p>
                 <p className="font-semibold text-foreground">O ponto não é "dar certo" — é garantir que o próximo movimento seja feito com critério.</p>
               </>}
             />
