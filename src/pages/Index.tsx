@@ -181,7 +181,7 @@ const Index = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-6">
             Para quem é essa imersão
           </h2>
-          <p className="text-primary-foreground/80 text-lg text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-primary-foreground/80 text-lg md:text-xl text-center mb-12 max-w-2xl mx-auto">
             Você não está em crise — mas sabe que precisa decidir melhor o próximo movimento.
           </p>
           <ul className="space-y-4 max-w-xl mx-auto mb-10">
