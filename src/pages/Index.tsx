@@ -464,8 +464,8 @@ const Index = () => {
       {/* ═══════════ 10. CTA FINAL ═══════════ */}
       <section className="relative overflow-hidden pt-40 sm:pt-48 md:pt-64 pb-12">
         <img
-          src="/images/final-equipe.png"
-          alt="Fernanda Moura com equipe"
+          src="/images/sobre-poltrona.png"
+          alt="Fernanda Moura"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
