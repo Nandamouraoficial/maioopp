@@ -276,7 +276,7 @@ const Index = () => {
                 </p>
                 <p>
                   Em 2021, fez o que muitas executivas pensam mas não executam:{" "}
-                  <strong className="text-foreground">parou. Intencionalmente.</strong>{" "}
+                  <strong className="text-primary-foreground">parou. Intencionalmente.</strong>{" "}
                   Para decidir o próximo movimento com método — não com impulso.
                 </p>
                 <p>
