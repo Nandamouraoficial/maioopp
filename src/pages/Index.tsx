@@ -14,7 +14,7 @@ const Divider = () => (
   </div>
 );
 
-const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
+const FAQItem = ({ question, answer }: { question: string; answer: React.ReactNode }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className="border border-border rounded-xl overflow-hidden">
@@ -27,7 +27,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
       </button>
       {open && (
         <div className="px-5 pb-5 pt-0">
-          <p className="text-muted-foreground text-base leading-relaxed">{answer}</p>
+          <div className="text-muted-foreground text-base leading-relaxed space-y-3">{answer}</div>
         </div>
       )}
     </div>
@@ -48,7 +48,18 @@ const Index = () => {
         size="lg"
         className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-base px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
       >
-        GARANTIR MINHA VAGA
+        QUERO DECIDIR MEU PRÓXIMO MOVIMENTO
+      </Button>
+    </a>
+  );
+
+  const ctaButtonFinal = (
+    <a onClick={handleCTAClick} className="cursor-pointer">
+      <Button
+        size="lg"
+        className="bg-primary hover:bg-cta-hover text-primary-foreground font-bold text-sm sm:text-base px-10 sm:px-14 py-7 sm:py-8 rounded-lg shadow-xl shadow-primary/20 tracking-wide transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+      >
+        QUERO SAIR COM UMA DECISÃO TOMADA
       </Button>
     </a>
   );
@@ -67,15 +78,12 @@ const Index = () => {
             <div className="flex-1 text-foreground text-center lg:text-left">
               <p className="text-accent text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
               <h1 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black leading-tight mb-8">
-                Sua carreira já te trouxe até aqui.
+                Você não precisa de mais informação.
                 <br />
-                <span className="text-accent">O próximo passo exige direção.</span>
+                <span className="text-accent">Precisa decidir o seu próximo movimento.</span>
               </h1>
-              <p className="text-lg md:text-xl font-light leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
-                Um dia inteiro de trabalho estratégico para executivos e profissionais seniores que precisam decidir o próximo movimento de carreira — com método, não com impulso.
-              </p>
-              <p className="text-base font-semibold mb-10 max-w-lg mx-auto lg:mx-0">
-                Não é aula. Não é palestra. É a imersão onde você sai com uma decisão tomada e um plano para os próximos 30 dias.
+              <p className="text-lg md:text-xl font-light leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0">
+                Um dia inteiro de trabalho estratégico para executivas que não podem mais adiar uma decisão de carreira.
               </p>
 
               <div className="flex flex-col items-center lg:items-start gap-3">
@@ -108,9 +116,12 @@ const Index = () => {
       {/* ═══════════ 2. PARA QUEM É ═══════════ */}
       <section className="relative bg-primary py-20 md:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-6">
             Para quem é essa imersão
           </h2>
+          <p className="text-primary-foreground/80 text-lg text-center mb-12 max-w-2xl mx-auto">
+            Você não está em crise — mas sabe que precisa decidir melhor o próximo movimento.
+          </p>
           <ul className="space-y-4 max-w-xl mx-auto mb-10">
             {[
               "Você ocupa uma posição de liderança ou influência há anos",
@@ -356,6 +367,14 @@ const Index = () => {
             ))}
           </div>
 
+          <div className="bg-primary-foreground/5 border border-primary-foreground/15 rounded-xl p-6 max-w-xl mx-auto mb-10">
+            <p className="text-primary-foreground text-lg leading-relaxed">
+              Adiar essa decisão parece seguro.
+              <br />
+              <strong className="text-accent">Mas, em carreiras seniores, costuma ser caro.</strong>
+            </p>
+          </div>
+
           <h3 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-6">
             Investimento
           </h3>
@@ -434,28 +453,70 @@ const Index = () => {
           </h2>
           <div className="space-y-3">
             <FAQItem
+              question="Transição de carreira é só para quem está desempregada ou saindo da empresa?"
+              answer={<>
+                <p>Não. Transição não começa quando você sai de uma empresa. Começa quando você percebe que continuar como está já não é suficiente.</p>
+                <p>A maioria das executivas que participam não está desempregada — está exatamente no ponto em que precisa decidir o próximo movimento com mais critério.</p>
+                <p>Você não precisa estar em crise para participar. Mas, se já percebeu que precisa evoluir e ainda não estruturou como, você já está em transição.</p>
+                <p className="font-semibold text-foreground">E adiar essa decisão costuma custar mais do que parece.</p>
+              </>}
+            />
+            <FAQItem
               question="Preciso estar em transição de carreira para participar?"
-              answer="Não. A imersão é para qualquer profissional sênior que queira estruturar o próximo movimento com mais critério — esteja planejando uma mudança ou querendo crescer de forma mais intencional onde está."
+              answer={<>
+                <p>Não no sentido tradicional. Você não precisa estar saindo de uma empresa ou disponível no mercado.</p>
+                <p>Mas precisa estar em um momento em que continuar como está já não é suficiente — e o próximo passo ainda não está claro.</p>
+                <p className="font-semibold text-foreground">Esse é exatamente o ponto em que a imersão mais gera valor.</p>
+              </>}
             />
             <FAQItem
               question="A imersão é individual ou em grupo?"
-              answer="É em grupo — mas um grupo reduzido de até 15 participantes, o que garante profundidade e espaço para cada situação individual ser trabalhada."
+              answer={<>
+                <p>É em grupo, com até 15 executivas. O grupo é intencionalmente reduzido para garantir profundidade, troca qualificada e decisões com contexto real — não genéricas.</p>
+                <p className="font-semibold text-foreground">Não é uma sessão aberta. É um ambiente estratégico.</p>
+              </>}
             />
             <FAQItem
               question="Como funciona a garantia?"
-              answer="Se ao final da imersão você não sair com uma decisão clara sobre o próximo movimento e um plano para os próximos 30 dias, devolvemos 100% do valor investido. Sem burocracia."
+              answer={<>
+                <p>Se ao final da imersão você não sair com uma decisão clara sobre o seu próximo movimento e um plano estruturado para os próximos 30 dias, você pode solicitar 100% do valor investido de volta.</p>
+                <p className="font-semibold text-foreground">Sem burocracia.</p>
+              </>}
             />
             <FAQItem
               question="Qual é o formato?"
-              answer="Online e ao vivo, das 9h às 15h (horário de Brasília). Não é aula gravada. É um dia de trabalho estratégico, conduzido em tempo real pela Fernanda Moura."
+              answer={<>
+                <p>Um encontro online, ao vivo, com duração de 6 horas.</p>
+                <p>Estruturado em etapas que levam você de um cenário indefinido a uma decisão concreta — com aplicação direta no seu contexto.</p>
+              </>}
             />
             <FAQItem
               question="Preciso me preparar de alguma forma?"
-              answer="Sim. Após a inscrição, você receberá um material pré-imersão com perguntas estratégicas para que o trabalho no dia seja ainda mais produtivo."
+              answer={<>
+                <p>Não. Você chega com o seu momento atual — e isso é suficiente.</p>
+                <p>A imersão foi desenhada para organizar o que hoje está disperso e transformar em decisão estruturada.</p>
+              </>}
             />
             <FAQItem
               question="E se eu não puder participar no dia?"
-              answer="Como o grupo é fechado e a experiência é ao vivo, não oferecemos gravação. Se precisar remarcar, entre em contato e avaliaremos a possibilidade de participação na próxima edição."
+              answer={<>
+                <p>Por ser uma imersão ao vivo, com dinâmica construída em tempo real, não há gravação.</p>
+                <p>Caso não possa participar, sua vaga pode ser transferida para uma próxima edição (mediante aviso prévio).</p>
+              </>}
+            />
+            <FAQItem
+              question="Isso funciona para quem já está bem na carreira?"
+              answer={<>
+                <p>Sim. A maioria das participantes já tem uma carreira estruturada.</p>
+                <p className="font-semibold text-foreground">O ponto não é "dar certo" — é garantir que o próximo movimento seja feito com critério, e não no automático.</p>
+              </>}
+            />
+            <FAQItem
+              question="O que acontece depois da imersão?"
+              answer={<>
+                <p>Você sai com uma decisão tomada e um plano claro para os próximos 30 dias.</p>
+                <p>Para quem quiser aprofundar, existe a possibilidade de continuidade em mentoria — mas a imersão, por si só, já entrega um avanço concreto.</p>
+              </>}
             />
           </div>
         </div>
@@ -469,17 +530,16 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-background/85" />
+        <div className="absolute inset-0 bg-background/50 backdrop-blur-[1px]" style={{ background: "linear-gradient(to bottom, hsla(var(--background) / 0.3), hsla(var(--background) / 0.85) 40%, hsl(var(--background)))" }} />
         <div className="relative container mx-auto px-4 sm:px-6 max-w-3xl text-center text-foreground flex flex-col justify-end min-h-[320px] sm:min-h-[400px]">
-          <p className="text-lg md:text-xl text-muted-foreground mb-6">
+          <p className="text-xl md:text-2xl text-foreground font-semibold leading-relaxed mb-6">
             Se você já percebeu que deixar a carreira no automático pode custar caro,
-            <br />essa é a sala para decidir com método.
+            <br />adiar essa decisão não resolve.
           </p>
-          <div className="flex flex-col items-center gap-2 mb-10">
-            <span className="text-foreground font-bold">Grupo reduzido. Discussão estratégica real.</span>
-            <span className="text-foreground font-bold">Próximo movimento com direção.</span>
-          </div>
-          {ctaButton}
+          <p className="text-lg text-foreground/80 font-bold mb-10">
+            Essa é a sala para decidir com método.
+          </p>
+          {ctaButtonFinal}
         </div>
       </section>
 
