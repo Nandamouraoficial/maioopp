@@ -268,7 +268,7 @@ const Index = () => {
               <p className="text-accent font-bold mb-6">
                 Estrategista Executiva de Carreira
               </p>
-              <div className="text-lg leading-relaxed text-muted-foreground space-y-4">
+              <div className="text-lg leading-relaxed text-primary-foreground/70 space-y-4">
                 <p>
                   26 anos dentro do sistema corporativo —{" "}
                   <strong className="text-foreground">Coca-Cola, Cargill, Kraft Heinz, Kimberly-Clark e MBRF (Sadia e Perdigão)</strong>.
