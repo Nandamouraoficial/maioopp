@@ -52,6 +52,10 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         "cta-hover": "hsl(var(--cta-hover))",
+        warm: {
+          DEFAULT: "hsl(var(--warm))",
+          foreground: "hsl(var(--warm-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
