@@ -503,7 +503,7 @@ const Index = () => {
 
           <div className="bg-primary-foreground/10 rounded-xl p-6 mb-8 max-w-xl mx-auto text-left">
             <p className="text-primary-foreground/70 text-base leading-relaxed">
-              Uma sessão individual com uma ex-diretora executiva C-level custa entre{" "}
+              Uma sessão individual com um ex-executivo C-level custa entre{" "}
               <strong className="text-primary-foreground">R$ 3.000 e R$ 10.000</strong>.
             </p>
             <p className="text-primary-foreground/70 text-base leading-relaxed mt-4">
