@@ -104,7 +104,7 @@ const Index = () => {
                 Uma imersão estratégica para quem não pode mais adiar uma decisão de carreira.
               </p>
               <p className="text-xs sm:text-base text-warm font-semibold mb-10 max-w-lg mx-auto lg:mx-0">
-                Clareza, direção e um plano estruturado para os próximos 30 dias.
+                Clareza, direção e um plano estruturado para os próximos 90 dias.
               </p>
 
               <div className="flex flex-col items-center lg:items-start gap-3">
@@ -228,7 +228,7 @@ const Index = () => {
               "Você identifica com precisão o que está travando seu avanço hoje",
               "Analisa os caminhos possíveis — e descarta os que parecem bons, mas não fazem sentido para o seu momento",
               "Define o próximo movimento com critério, não por pressão ou impulso",
-              "Sai com um plano estruturado para os próximos 30 dias",
+              "Sai com um plano estruturado para os próximos 90 dias",
             ].map((item, i) => (
               <div
                 key={i}
@@ -266,7 +266,7 @@ const Index = () => {
               "Uma decisão clara sobre seu próximo movimento de carreira",
               "Um diagnóstico objetivo do que está travando seu avanço",
               "Um mapa dos caminhos possíveis com análise estratégica real",
-              "Um plano de ação para os próximos 30 dias — da intenção à execução",
+              "Um plano de ação para os próximos 90 dias — da intenção à execução",
               "Clareza sobre o que parar de fazer para não continuar investindo no caminho errado",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-lg md:text-xl text-primary-foreground/90">
@@ -546,7 +546,7 @@ const Index = () => {
               Garantia de resultado
             </p>
             <p className="text-primary-foreground/70 text-base leading-relaxed">
-              Se ao final de O Próximo Passo você não sair com sua decisão sobre o próximo movimento e com um plano estruturado para os próximos 30 dias, eu devolvo 100% do seu investimento.
+              Se ao final de O Próximo Passo você não sair com sua decisão sobre o próximo movimento e com um plano estruturado para os próximos 90 dias, eu devolvo 100% do seu investimento.
             </p>
             <p className="text-primary-foreground font-bold text-lg">
               Sem burocracia.
@@ -608,7 +608,7 @@ const Index = () => {
             <FAQItem
               question="O que acontece depois da imersão?"
               answer={<>
-                <p>Você sai com uma decisão e um plano claro para os próximos 30 dias.</p>
+                <p>Você sai com uma decisão e um plano claro para os próximos 90 dias.</p>
                 <p>Se quiser aprofundar, existe continuidade em mentoria — mas a imersão já entrega avanço concreto.</p>
               </>}
             />
