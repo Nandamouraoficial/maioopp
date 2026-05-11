@@ -169,7 +169,7 @@ const Index = () => {
                 "Saí com um direcionamento estruturado — e com segurança para me posicionar além da minha área técnica."
               </p>
               <footer className="text-sm text-muted-foreground">
-                — Juliana Zobaran <span className="text-warm">· Diretora LATAM</span>
+                — Juliana Zobaran <span className="text-warm">· Diretora Executiva LATAM</span>
               </footer>
             </blockquote>
           </div>
