@@ -116,7 +116,7 @@ const Index = () => {
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 mt-8 text-sm opacity-80">
                 <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> 27 de junho</span>
-                <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 9h às 13h</span>
+                <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 9h às 15h</span>
                 <span className="flex items-center gap-1.5"><Monitor className="w-4 h-4" /> Online e ao vivo</span>
                 <span className="flex items-center gap-1.5"><Users className="w-4 h-4" /> 15 vagas</span>
               </div>
@@ -486,7 +486,7 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 gap-4 max-w-lg mx-auto mb-12">
             {[
               { icon: Calendar, label: "27 de junho de 2026" },
-              { icon: Clock, label: "9h às 13h (horário de Brasília)" },
+              { icon: Clock, label: "9h às 15h (horário de Brasília)" },
               { icon: Monitor, label: "Online e ao vivo" },
               { icon: Users, label: "Grupo fechado — até 15 vagas" },
             ].map(({ icon: Icon, label }) => (
