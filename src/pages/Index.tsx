@@ -91,7 +91,7 @@ const Index = () => {
         <div className="relative container mx-auto px-5 sm:px-6 pt-20 md:pt-28 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="flex-1 text-foreground text-center lg:text-left overflow-hidden">
-              <p className="text-warm text-xs sm:text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Maio 2026</p>
+              <p className="text-warm text-xs sm:text-sm uppercase tracking-widest font-bold mb-4">Imersão Presencial Online · Junho 2026</p>
               <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-warm mb-6 tracking-tight">
                 O Próximo Passo
               </p>
@@ -115,8 +115,8 @@ const Index = () => {
               </div>
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 mt-8 text-sm opacity-80">
-                <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> 16 de maio</span>
-                <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 9h às 15h</span>
+                <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> 27 de junho</span>
+                <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 9h às 13h</span>
                 <span className="flex items-center gap-1.5"><Monitor className="w-4 h-4" /> Online e ao vivo</span>
                 <span className="flex items-center gap-1.5"><Users className="w-4 h-4" /> 15 vagas</span>
               </div>
@@ -485,8 +485,8 @@ const Index = () => {
 
           <div className="grid sm:grid-cols-2 gap-4 max-w-lg mx-auto mb-12">
             {[
-              { icon: Calendar, label: "16 de maio de 2026" },
-              { icon: Clock, label: "9h às 15h (horário de Brasília)" },
+              { icon: Calendar, label: "27 de junho de 2026" },
+              { icon: Clock, label: "9h às 13h (horário de Brasília)" },
               { icon: Monitor, label: "Online e ao vivo" },
               { icon: Users, label: "Grupo fechado — até 15 vagas" },
             ].map(({ icon: Icon, label }) => (
@@ -521,9 +521,9 @@ const Index = () => {
 
           <div className="bg-primary-foreground/10 rounded-2xl py-10 px-8 mb-8 inline-block">
             <p className="font-body text-primary-foreground text-xl md:text-2xl font-semibold">
-              12x de R$ 139,90
+              12x de R$ 82,25
             </p>
-            <p className="text-primary-foreground/60 text-sm mt-2">ou R$ 1.497 à vista</p>
+            <p className="text-primary-foreground/60 text-sm mt-2">ou R$ 987,00 à vista</p>
           </div>
 
           <div className="max-w-xl mx-auto mb-8">
