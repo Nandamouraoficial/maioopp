@@ -157,7 +157,7 @@ const Index = () => {
                 "Saí com direção. E com um plano claro para executar."
               </p>
               <footer className="text-sm text-muted-foreground">
-                — Carla Negrão <span className="text-warm">· Executiva de Assuntos Regulatórios (SRA)</span>
+                — Carla Negrão <span className="text-warm">· Ex-executiva Nestlé</span>
               </footer>
             </blockquote>
 
