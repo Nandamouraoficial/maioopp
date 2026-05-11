@@ -157,7 +157,7 @@ const Index = () => {
                 "Saí com direção. E com um plano claro para executar."
               </p>
               <footer className="text-sm text-muted-foreground">
-                — Carla Negrão <span className="text-warm">· Executiva de Assuntos Regulatórios (SRA)</span>
+                — Carla Negrão <span className="text-warm">· Ex-executiva Nestlé</span>
               </footer>
             </blockquote>
 
@@ -169,7 +169,7 @@ const Index = () => {
                 "Saí com um direcionamento estruturado — e com segurança para me posicionar além da minha área técnica."
               </p>
               <footer className="text-sm text-muted-foreground">
-                — Juliana Zobaran <span className="text-warm">· Diretora LATAM</span>
+                — Juliana Zobaran <span className="text-warm">· Diretora Executiva LATAM</span>
               </footer>
             </blockquote>
           </div>
@@ -388,7 +388,7 @@ const Index = () => {
               </div>
               <div className="mt-6 pt-6 border-t border-primary/20">
                 <p className="font-bold text-primary">Carla Negrão</p>
-                <p className="text-primary/70 text-sm">Ex-executiva de Multinacional | Fundadora, CN Food Consulting</p>
+                <p className="text-primary/70 text-sm">Ex-executiva Nestlé</p>
               </div>
             </div>
 
@@ -402,7 +402,7 @@ const Index = () => {
               </div>
               <div className="mt-6 pt-6 border-t border-primary/20">
                 <p className="font-bold text-primary">Juliana Zobaran</p>
-                <p className="text-primary/70 text-sm">Diretora de Impostos para América Latina · Vantiva</p>
+                <p className="text-primary/70 text-sm">Diretora Executiva LATAM</p>
               </div>
             </div>
           </div>
