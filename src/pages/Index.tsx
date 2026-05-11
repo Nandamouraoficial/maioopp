@@ -388,7 +388,7 @@ const Index = () => {
               </div>
               <div className="mt-6 pt-6 border-t border-primary/20">
                 <p className="font-bold text-primary">Carla Negrão</p>
-                <p className="text-primary/70 text-sm">Ex-executiva de Multinacional | Fundadora, CN Food Consulting</p>
+                <p className="text-primary/70 text-sm">Ex-executiva Nestlé</p>
               </div>
             </div>
 
