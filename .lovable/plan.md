@@ -1,14 +1,6 @@
-
-
-## Plano: Atualizar cargos de Carla Negrão e Juliana Zobaran
+## Plano: Atualizar horário da imersão para 9h às 15h
 
 ### Alterações em `src/pages/Index.tsx`
 
-**Carla Negrão** — alterar cargo para "Ex-executiva Nestlé":
-- **Linha 160**: `· Executiva de Assuntos Regulatórios (SRA)` → `· Ex-executiva Nestlé`
-- **Linha 391**: `Ex-executiva de Multinacional | Fundadora, CN Food Consulting` → `Ex-executiva Nestlé`
-
-**Juliana Zobaran** — alterar cargo para "Diretora Executiva LATAM":
-- **Linha 172**: `· Diretora LATAM` → `· Diretora Executiva LATAM`
-- **Linha 405**: `Diretora de Impostos para América Latina · Vantiva` → `Diretora Executiva LATAM`
-
+- **Linha 119** (Hero): `9h às 13h` → `9h às 15h`
+- **Linha 489** (Detalhes do evento): `9h às 13h (horário de Brasília)` → `9h às 15h (horário de Brasília)`
